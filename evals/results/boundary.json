@@ -1,0 +1,950 @@
+{
+  "dataset_sha256": "453610570b18718470b4ccf417146f7e466a4aa29093bd319d9829d342e4858b",
+  "application_sha256": {
+    "backend/app/store.py": "40e443b6069c8536b3c9f0ebe305638094966c18243fbe7fb154a7895a1728e7",
+    "backend/app/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "backend/app/agent.py": "a37a21d43e74c93124a00a297743aadc812428d843e0bf1851f44cd788e1f62e",
+    "backend/app/main.py": "6113102884e5b8d6c1cc988dda0d81276883768c4b08d4841d26c4ef7d53593d",
+    "backend/app/evidence.py": "cad47e5cc4412eaefe8a47916692dc345e473fe86840d8ba814cef4fdf060f2c"
+  },
+  "raw": [
+    {
+      "id": "b01",
+      "category": "overlap_fragment",
+      "mode": "extractive",
+      "success": true,
+      "partial_fragment_present": true,
+      "error": null,
+      "total_ms": 3.9338749999999756,
+      "retrieval_ms": 1.165708000000043,
+      "generation_ms": null,
+      "result": {
+        "answer": "background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background The Nimbus incident owner is Drew Fox. [S1]\n\nroutine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background The Nimbus incident owner is Drew [S2]",
+        "sources": [
+          {
+            "id": "3db214b2d00d44a3a3091696ba663e7f",
+            "document_id": "9643617ae6c643ad914b1ed5aef9b4d0",
+            "name": "nimbus.txt",
+            "page": 1,
+            "text": "background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background The Nimbus incident owner is Drew Fox. The Nimbus storage quota is 64 megabytes.",
+            "document_title": "Nimbus engineering reference notes. routine background routine backgro",
+            "score": 0.03279,
+            "evidence_text": "background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background The Nimbus incident owner is Drew Fox."
+          },
+          {
+            "id": "cd7a6c02998442b3beb9fed859629663",
+            "document_id": "9643617ae6c643ad914b1ed5aef9b4d0",
+            "name": "nimbus.txt",
+            "page": 1,
+            "text": "Nimbus engineering reference notes. routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background The Nimbus incident owner is Drew",
+            "document_title": "Nimbus engineering reference notes. routine background routine backgro",
+            "score": 0.03226,
+            "evidence_text": "routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background The Nimbus incident owner is Drew"
+          }
+        ],
+        "trace": [
+          {
+            "step": "plan",
+            "detail": "Search documents, assemble evidence, and validate source references."
+          },
+          {
+            "step": "retrieve",
+            "detail": "Hybrid TF-IDF + BM25 retrieval and lexical reranking returned 2 chunks; coverage-aware evidence selection retained 2 sources."
+          },
+          {
+            "step": "answer",
+            "detail": "Selected source sentences."
+          },
+          {
+            "step": "validate",
+            "detail": "Source reference IDs checked; semantic faithfulness requires separate review."
+          }
+        ],
+        "mode": "extractive",
+        "warning": null,
+        "citation_check": {
+          "valid": true,
+          "invalid": [],
+          "cited_count": 2,
+          "note": "Checks source references, not semantic faithfulness."
+        },
+        "latency_ms": 3.9
+      }
+    },
+    {
+      "id": "b01",
+      "category": "overlap_fragment",
+      "mode": "ollama",
+      "success": true,
+      "partial_fragment_present": true,
+      "error": null,
+      "total_ms": 1027.855667,
+      "retrieval_ms": 1.1055419999999039,
+      "generation_ms": 1025.481917,
+      "result": {
+        "answer": "The Nimbus incident owner is Drew Fox. [S1] [S2]",
+        "sources": [
+          {
+            "id": "3db214b2d00d44a3a3091696ba663e7f",
+            "document_id": "9643617ae6c643ad914b1ed5aef9b4d0",
+            "name": "nimbus.txt",
+            "page": 1,
+            "text": "background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background The Nimbus incident owner is Drew Fox. The Nimbus storage quota is 64 megabytes.",
+            "document_title": "Nimbus engineering reference notes. routine background routine backgro",
+            "score": 0.03279,
+            "evidence_text": "background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background The Nimbus incident owner is Drew Fox."
+          },
+          {
+            "id": "cd7a6c02998442b3beb9fed859629663",
+            "document_id": "9643617ae6c643ad914b1ed5aef9b4d0",
+            "name": "nimbus.txt",
+            "page": 1,
+            "text": "Nimbus engineering reference notes. routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background The Nimbus incident owner is Drew",
+            "document_title": "Nimbus engineering reference notes. routine background routine backgro",
+            "score": 0.03226,
+            "evidence_text": "routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background The Nimbus incident owner is Drew"
+          }
+        ],
+        "trace": [
+          {
+            "step": "plan",
+            "detail": "Search documents, assemble evidence, and validate source references."
+          },
+          {
+            "step": "retrieve",
+            "detail": "Hybrid TF-IDF + BM25 retrieval and lexical reranking returned 2 chunks; coverage-aware evidence selection retained 2 sources."
+          },
+          {
+            "step": "answer",
+            "detail": "Generated locally with qwen2.5:1.5b."
+          },
+          {
+            "step": "validate",
+            "detail": "Source reference IDs checked; semantic faithfulness requires separate review."
+          }
+        ],
+        "mode": "ollama",
+        "warning": null,
+        "citation_check": {
+          "valid": true,
+          "invalid": [],
+          "cited_count": 2,
+          "note": "Checks source references, not semantic faithfulness."
+        },
+        "latency_ms": 1027.8
+      }
+    },
+    {
+      "id": "b02",
+      "category": "overlap_fragment",
+      "mode": "extractive",
+      "success": true,
+      "partial_fragment_present": true,
+      "error": null,
+      "total_ms": 2.5092089999998457,
+      "retrieval_ms": 1.206416999999682,
+      "generation_ms": null,
+      "result": {
+        "answer": "background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background The Echo incident owner is Alex Page. [S1]\n\nroutine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background The Echo incident owner is Alex [S2]",
+        "sources": [
+          {
+            "id": "77c50807a4e748369d31faa8394cd204",
+            "document_id": "50308805650c4064a4818d05db4122b3",
+            "name": "echo.txt",
+            "page": 1,
+            "text": "background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background The Echo incident owner is Alex Page. The Echo storage quota is 80 megabytes.",
+            "document_title": "Echo engineering reference notes. routine background routine backgroun",
+            "score": 0.03279,
+            "evidence_text": "background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background The Echo incident owner is Alex Page."
+          },
+          {
+            "id": "5e9d183a8a04483ab1844bdefcc9dcc1",
+            "document_id": "50308805650c4064a4818d05db4122b3",
+            "name": "echo.txt",
+            "page": 1,
+            "text": "Echo engineering reference notes. routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background The Echo incident owner is Alex",
+            "document_title": "Echo engineering reference notes. routine background routine backgroun",
+            "score": 0.03226,
+            "evidence_text": "routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background The Echo incident owner is Alex"
+          }
+        ],
+        "trace": [
+          {
+            "step": "plan",
+            "detail": "Search documents, assemble evidence, and validate source references."
+          },
+          {
+            "step": "retrieve",
+            "detail": "Hybrid TF-IDF + BM25 retrieval and lexical reranking returned 2 chunks; coverage-aware evidence selection retained 2 sources."
+          },
+          {
+            "step": "answer",
+            "detail": "Selected source sentences."
+          },
+          {
+            "step": "validate",
+            "detail": "Source reference IDs checked; semantic faithfulness requires separate review."
+          }
+        ],
+        "mode": "extractive",
+        "warning": null,
+        "citation_check": {
+          "valid": true,
+          "invalid": [],
+          "cited_count": 2,
+          "note": "Checks source references, not semantic faithfulness."
+        },
+        "latency_ms": 2.5
+      }
+    },
+    {
+      "id": "b02",
+      "category": "overlap_fragment",
+      "mode": "ollama",
+      "success": true,
+      "partial_fragment_present": true,
+      "error": null,
+      "total_ms": 931.5305830000002,
+      "retrieval_ms": 1.0861250000000489,
+      "generation_ms": 929.27025,
+      "result": {
+        "answer": "The Echo incident owner is Alex Page. [S1] [S2]",
+        "sources": [
+          {
+            "id": "77c50807a4e748369d31faa8394cd204",
+            "document_id": "50308805650c4064a4818d05db4122b3",
+            "name": "echo.txt",
+            "page": 1,
+            "text": "background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background The Echo incident owner is Alex Page. The Echo storage quota is 80 megabytes.",
+            "document_title": "Echo engineering reference notes. routine background routine backgroun",
+            "score": 0.03279,
+            "evidence_text": "background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background The Echo incident owner is Alex Page."
+          },
+          {
+            "id": "5e9d183a8a04483ab1844bdefcc9dcc1",
+            "document_id": "50308805650c4064a4818d05db4122b3",
+            "name": "echo.txt",
+            "page": 1,
+            "text": "Echo engineering reference notes. routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background The Echo incident owner is Alex",
+            "document_title": "Echo engineering reference notes. routine background routine backgroun",
+            "score": 0.03226,
+            "evidence_text": "routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background The Echo incident owner is Alex"
+          }
+        ],
+        "trace": [
+          {
+            "step": "plan",
+            "detail": "Search documents, assemble evidence, and validate source references."
+          },
+          {
+            "step": "retrieve",
+            "detail": "Hybrid TF-IDF + BM25 retrieval and lexical reranking returned 2 chunks; coverage-aware evidence selection retained 2 sources."
+          },
+          {
+            "step": "answer",
+            "detail": "Generated locally with qwen2.5:1.5b."
+          },
+          {
+            "step": "validate",
+            "detail": "Source reference IDs checked; semantic faithfulness requires separate review."
+          }
+        ],
+        "mode": "ollama",
+        "warning": null,
+        "citation_check": {
+          "valid": true,
+          "invalid": [],
+          "cited_count": 2,
+          "note": "Checks source references, not semantic faithfulness."
+        },
+        "latency_ms": 931.5
+      }
+    },
+    {
+      "id": "b03",
+      "category": "overlap_fragment",
+      "mode": "extractive",
+      "success": true,
+      "partial_fragment_present": true,
+      "error": null,
+      "total_ms": 2.255750000000223,
+      "retrieval_ms": 1.0850000000002247,
+      "generation_ms": null,
+      "result": {
+        "answer": "background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background The Pioneer incident owner is Casey Dawn. [S1]\n\nroutine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background The Pioneer incident owner is Casey [S2]",
+        "sources": [
+          {
+            "id": "889fe42f7f2546ff80b2329bdc0bb07d",
+            "document_id": "8ed9cd4a69a14981a43fad31db0c089b",
+            "name": "pioneer.txt",
+            "page": 1,
+            "text": "background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background The Pioneer incident owner is Casey Dawn. The Pioneer storage quota is 96 megabytes.",
+            "document_title": "Pioneer engineering reference notes. routine background routine backgr",
+            "score": 0.03279,
+            "evidence_text": "background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background The Pioneer incident owner is Casey Dawn."
+          },
+          {
+            "id": "495e3ccb6d374cbd8fe2b7dee1af4e7b",
+            "document_id": "8ed9cd4a69a14981a43fad31db0c089b",
+            "name": "pioneer.txt",
+            "page": 1,
+            "text": "Pioneer engineering reference notes. routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background The Pioneer incident owner is Casey",
+            "document_title": "Pioneer engineering reference notes. routine background routine backgr",
+            "score": 0.03226,
+            "evidence_text": "routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background The Pioneer incident owner is Casey"
+          }
+        ],
+        "trace": [
+          {
+            "step": "plan",
+            "detail": "Search documents, assemble evidence, and validate source references."
+          },
+          {
+            "step": "retrieve",
+            "detail": "Hybrid TF-IDF + BM25 retrieval and lexical reranking returned 2 chunks; coverage-aware evidence selection retained 2 sources."
+          },
+          {
+            "step": "answer",
+            "detail": "Selected source sentences."
+          },
+          {
+            "step": "validate",
+            "detail": "Source reference IDs checked; semantic faithfulness requires separate review."
+          }
+        ],
+        "mode": "extractive",
+        "warning": null,
+        "citation_check": {
+          "valid": true,
+          "invalid": [],
+          "cited_count": 2,
+          "note": "Checks source references, not semantic faithfulness."
+        },
+        "latency_ms": 2.2
+      }
+    },
+    {
+      "id": "b03",
+      "category": "overlap_fragment",
+      "mode": "ollama",
+      "success": true,
+      "partial_fragment_present": true,
+      "error": null,
+      "total_ms": 897.0685839999999,
+      "retrieval_ms": 1.0131669999999815,
+      "generation_ms": 894.8233749999996,
+      "result": {
+        "answer": "The Pioneer incident owner is Casey Dawn. [S1] [S2]",
+        "sources": [
+          {
+            "id": "889fe42f7f2546ff80b2329bdc0bb07d",
+            "document_id": "8ed9cd4a69a14981a43fad31db0c089b",
+            "name": "pioneer.txt",
+            "page": 1,
+            "text": "background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background The Pioneer incident owner is Casey Dawn. The Pioneer storage quota is 96 megabytes.",
+            "document_title": "Pioneer engineering reference notes. routine background routine backgr",
+            "score": 0.03279,
+            "evidence_text": "background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background The Pioneer incident owner is Casey Dawn."
+          },
+          {
+            "id": "495e3ccb6d374cbd8fe2b7dee1af4e7b",
+            "document_id": "8ed9cd4a69a14981a43fad31db0c089b",
+            "name": "pioneer.txt",
+            "page": 1,
+            "text": "Pioneer engineering reference notes. routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background The Pioneer incident owner is Casey",
+            "document_title": "Pioneer engineering reference notes. routine background routine backgr",
+            "score": 0.03226,
+            "evidence_text": "routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background The Pioneer incident owner is Casey"
+          }
+        ],
+        "trace": [
+          {
+            "step": "plan",
+            "detail": "Search documents, assemble evidence, and validate source references."
+          },
+          {
+            "step": "retrieve",
+            "detail": "Hybrid TF-IDF + BM25 retrieval and lexical reranking returned 2 chunks; coverage-aware evidence selection retained 2 sources."
+          },
+          {
+            "step": "answer",
+            "detail": "Generated locally with qwen2.5:1.5b."
+          },
+          {
+            "step": "validate",
+            "detail": "Source reference IDs checked; semantic faithfulness requires separate review."
+          }
+        ],
+        "mode": "ollama",
+        "warning": null,
+        "citation_check": {
+          "valid": true,
+          "invalid": [],
+          "cited_count": 2,
+          "note": "Checks source references, not semantic faithfulness."
+        },
+        "latency_ms": 897.0
+      }
+    },
+    {
+      "id": "b04",
+      "category": "overlap_fragment",
+      "mode": "extractive",
+      "success": true,
+      "partial_fragment_present": true,
+      "error": null,
+      "total_ms": 2.4897089999997846,
+      "retrieval_ms": 1.1937499999996604,
+      "generation_ms": null,
+      "result": {
+        "answer": "background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background The Vista incident owner is Robin Frost. [S1]\n\nroutine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background The Vista incident owner is Robin [S2]",
+        "sources": [
+          {
+            "id": "e51d6d79668848d7b11ef94afe339ed8",
+            "document_id": "a2d2591f6ccd4e369ae35bbd61bf1606",
+            "name": "vista.txt",
+            "page": 1,
+            "text": "background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background The Vista incident owner is Robin Frost. The Vista storage quota is 112 megabytes.",
+            "document_title": "Vista engineering reference notes. routine background routine backgrou",
+            "score": 0.03279,
+            "evidence_text": "background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background The Vista incident owner is Robin Frost."
+          },
+          {
+            "id": "3126145aa5474de39e5c8f432cbefca6",
+            "document_id": "a2d2591f6ccd4e369ae35bbd61bf1606",
+            "name": "vista.txt",
+            "page": 1,
+            "text": "Vista engineering reference notes. routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background The Vista incident owner is Robin",
+            "document_title": "Vista engineering reference notes. routine background routine backgrou",
+            "score": 0.03226,
+            "evidence_text": "routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background The Vista incident owner is Robin"
+          }
+        ],
+        "trace": [
+          {
+            "step": "plan",
+            "detail": "Search documents, assemble evidence, and validate source references."
+          },
+          {
+            "step": "retrieve",
+            "detail": "Hybrid TF-IDF + BM25 retrieval and lexical reranking returned 2 chunks; coverage-aware evidence selection retained 2 sources."
+          },
+          {
+            "step": "answer",
+            "detail": "Selected source sentences."
+          },
+          {
+            "step": "validate",
+            "detail": "Source reference IDs checked; semantic faithfulness requires separate review."
+          }
+        ],
+        "mode": "extractive",
+        "warning": null,
+        "citation_check": {
+          "valid": true,
+          "invalid": [],
+          "cited_count": 2,
+          "note": "Checks source references, not semantic faithfulness."
+        },
+        "latency_ms": 2.5
+      }
+    },
+    {
+      "id": "b04",
+      "category": "overlap_fragment",
+      "mode": "ollama",
+      "success": true,
+      "partial_fragment_present": true,
+      "error": null,
+      "total_ms": 1275.7064170000003,
+      "retrieval_ms": 1.0820830000000115,
+      "generation_ms": 1273.3219589999997,
+      "result": {
+        "answer": "The Vista incident owner is Robin Frost. [S1] [S2]\n\nThe Vista incident owner is Robin. [S1] [S2]",
+        "sources": [
+          {
+            "id": "e51d6d79668848d7b11ef94afe339ed8",
+            "document_id": "a2d2591f6ccd4e369ae35bbd61bf1606",
+            "name": "vista.txt",
+            "page": 1,
+            "text": "background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background The Vista incident owner is Robin Frost. The Vista storage quota is 112 megabytes.",
+            "document_title": "Vista engineering reference notes. routine background routine backgrou",
+            "score": 0.03279,
+            "evidence_text": "background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background The Vista incident owner is Robin Frost."
+          },
+          {
+            "id": "3126145aa5474de39e5c8f432cbefca6",
+            "document_id": "a2d2591f6ccd4e369ae35bbd61bf1606",
+            "name": "vista.txt",
+            "page": 1,
+            "text": "Vista engineering reference notes. routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background The Vista incident owner is Robin",
+            "document_title": "Vista engineering reference notes. routine background routine backgrou",
+            "score": 0.03226,
+            "evidence_text": "routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background The Vista incident owner is Robin"
+          }
+        ],
+        "trace": [
+          {
+            "step": "plan",
+            "detail": "Search documents, assemble evidence, and validate source references."
+          },
+          {
+            "step": "retrieve",
+            "detail": "Hybrid TF-IDF + BM25 retrieval and lexical reranking returned 2 chunks; coverage-aware evidence selection retained 2 sources."
+          },
+          {
+            "step": "answer",
+            "detail": "Generated locally with qwen2.5:1.5b."
+          },
+          {
+            "step": "validate",
+            "detail": "Source reference IDs checked; semantic faithfulness requires separate review."
+          }
+        ],
+        "mode": "ollama",
+        "warning": null,
+        "citation_check": {
+          "valid": true,
+          "invalid": [],
+          "cited_count": 2,
+          "note": "Checks source references, not semantic faithfulness."
+        },
+        "latency_ms": 1275.6
+      }
+    },
+    {
+      "id": "b05",
+      "category": "cross_document_prefix_conflict",
+      "mode": "extractive",
+      "success": true,
+      "partial_fragment_present": null,
+      "error": null,
+      "total_ms": 1.2532499999995395,
+      "retrieval_ms": 0.9841250000004464,
+      "generation_ms": null,
+      "result": {
+        "answer": "I found conflicting or ambiguous evidence. Which project or document do you mean?",
+        "sources": [
+          {
+            "id": "432befd188eb43fa9e8a311bc3842206",
+            "document_id": "2763eccdadcf4e52889e15f7282f90e3",
+            "name": "one.txt",
+            "page": 1,
+            "text": "Meridian engineering note. The Meridian incident owner is Drew.",
+            "document_title": "Meridian engineering note. The Meridian incident owner is Drew.",
+            "score": 0.03279,
+            "evidence_text": "The Meridian incident owner is Drew.",
+            "evidence_units": [
+              {
+                "entity": [
+                  "meridian"
+                ],
+                "relation": [
+                  "incident",
+                  "owner"
+                ],
+                "value": "Drew",
+                "text": "The Meridian incident owner is Drew."
+              }
+            ],
+            "evidence_conflict": true,
+            "evidence_ambiguous": false,
+            "requested_entities": [
+              "meridian"
+            ]
+          },
+          {
+            "id": "d165d37976854e589a82fefc48c61f20",
+            "document_id": "aea72938cf574f068fd3f3a1eab4777d",
+            "name": "two.txt",
+            "page": 1,
+            "text": "Meridian engineering note. The Meridian incident owner is Drew Fox.",
+            "document_title": "Meridian engineering note. The Meridian incident owner is Drew Fox.",
+            "score": 0.03226,
+            "evidence_text": "The Meridian incident owner is Drew Fox.",
+            "evidence_units": [
+              {
+                "entity": [
+                  "meridian"
+                ],
+                "relation": [
+                  "incident",
+                  "owner"
+                ],
+                "value": "Drew Fox",
+                "text": "The Meridian incident owner is Drew Fox."
+              }
+            ],
+            "evidence_conflict": true,
+            "evidence_ambiguous": false,
+            "requested_entities": [
+              "meridian"
+            ]
+          }
+        ],
+        "trace": [
+          {
+            "step": "plan",
+            "detail": "Search documents, assemble evidence, and validate source references."
+          },
+          {
+            "step": "retrieve",
+            "detail": "Hybrid TF-IDF + BM25 retrieval and lexical reranking returned 2 chunks; coverage-aware evidence selection retained 2 sources."
+          },
+          {
+            "step": "clarify",
+            "detail": "Evidence has incompatible values for an entity/relation, or multiple applicable entities without a requested scope."
+          },
+          {
+            "step": "answer",
+            "detail": "Requested clarification about conflicting passages."
+          },
+          {
+            "step": "validate",
+            "detail": "Source reference IDs checked; semantic faithfulness requires separate review."
+          }
+        ],
+        "mode": "clarification",
+        "warning": null,
+        "citation_check": {
+          "valid": false,
+          "invalid": [],
+          "cited_count": 0,
+          "note": "Checks source references, not semantic faithfulness."
+        },
+        "latency_ms": 1.2
+      }
+    },
+    {
+      "id": "b05",
+      "category": "cross_document_prefix_conflict",
+      "mode": "ollama",
+      "success": true,
+      "partial_fragment_present": null,
+      "error": null,
+      "total_ms": 1.0664169999996531,
+      "retrieval_ms": 0.9159580000002165,
+      "generation_ms": null,
+      "result": {
+        "answer": "I found conflicting or ambiguous evidence. Which project or document do you mean?",
+        "sources": [
+          {
+            "id": "432befd188eb43fa9e8a311bc3842206",
+            "document_id": "2763eccdadcf4e52889e15f7282f90e3",
+            "name": "one.txt",
+            "page": 1,
+            "text": "Meridian engineering note. The Meridian incident owner is Drew.",
+            "document_title": "Meridian engineering note. The Meridian incident owner is Drew.",
+            "score": 0.03279,
+            "evidence_text": "The Meridian incident owner is Drew.",
+            "evidence_units": [
+              {
+                "entity": [
+                  "meridian"
+                ],
+                "relation": [
+                  "incident",
+                  "owner"
+                ],
+                "value": "Drew",
+                "text": "The Meridian incident owner is Drew."
+              }
+            ],
+            "evidence_conflict": true,
+            "evidence_ambiguous": false,
+            "requested_entities": [
+              "meridian"
+            ]
+          },
+          {
+            "id": "d165d37976854e589a82fefc48c61f20",
+            "document_id": "aea72938cf574f068fd3f3a1eab4777d",
+            "name": "two.txt",
+            "page": 1,
+            "text": "Meridian engineering note. The Meridian incident owner is Drew Fox.",
+            "document_title": "Meridian engineering note. The Meridian incident owner is Drew Fox.",
+            "score": 0.03226,
+            "evidence_text": "The Meridian incident owner is Drew Fox.",
+            "evidence_units": [
+              {
+                "entity": [
+                  "meridian"
+                ],
+                "relation": [
+                  "incident",
+                  "owner"
+                ],
+                "value": "Drew Fox",
+                "text": "The Meridian incident owner is Drew Fox."
+              }
+            ],
+            "evidence_conflict": true,
+            "evidence_ambiguous": false,
+            "requested_entities": [
+              "meridian"
+            ]
+          }
+        ],
+        "trace": [
+          {
+            "step": "plan",
+            "detail": "Search documents, assemble evidence, and validate source references."
+          },
+          {
+            "step": "retrieve",
+            "detail": "Hybrid TF-IDF + BM25 retrieval and lexical reranking returned 2 chunks; coverage-aware evidence selection retained 2 sources."
+          },
+          {
+            "step": "clarify",
+            "detail": "Evidence has incompatible values for an entity/relation, or multiple applicable entities without a requested scope."
+          },
+          {
+            "step": "answer",
+            "detail": "Requested clarification about conflicting passages."
+          },
+          {
+            "step": "validate",
+            "detail": "Source reference IDs checked; semantic faithfulness requires separate review."
+          }
+        ],
+        "mode": "clarification",
+        "warning": null,
+        "citation_check": {
+          "valid": false,
+          "invalid": [],
+          "cited_count": 0,
+          "note": "Checks source references, not semantic faithfulness."
+        },
+        "latency_ms": 1.1
+      }
+    },
+    {
+      "id": "b06",
+      "category": "cross_document_prefix_conflict",
+      "mode": "extractive",
+      "success": true,
+      "partial_fragment_present": null,
+      "error": null,
+      "total_ms": 2.6148749999999055,
+      "retrieval_ms": 1.6587500000007083,
+      "generation_ms": null,
+      "result": {
+        "answer": "I found conflicting or ambiguous evidence. Which project or document do you mean?",
+        "sources": [
+          {
+            "id": "0bb74a613ee04f219395ff5154853eed",
+            "document_id": "5a925db40d8d474ba3eb0f856bbd1175",
+            "name": "one.txt",
+            "page": 1,
+            "text": "Horizon engineering note. The Horizon incident owner is Drew.",
+            "document_title": "Horizon engineering note. The Horizon incident owner is Drew.",
+            "score": 0.03279,
+            "evidence_text": "The Horizon incident owner is Drew.",
+            "evidence_units": [
+              {
+                "entity": [
+                  "horizon"
+                ],
+                "relation": [
+                  "incident",
+                  "owner"
+                ],
+                "value": "Drew",
+                "text": "The Horizon incident owner is Drew."
+              }
+            ],
+            "evidence_conflict": true,
+            "evidence_ambiguous": false,
+            "requested_entities": [
+              "horizon"
+            ]
+          },
+          {
+            "id": "da36436e13c84d69a893069581fafd70",
+            "document_id": "8578d2ba65d747a2be2897fb0e7947c4",
+            "name": "two.txt",
+            "page": 1,
+            "text": "Horizon engineering note. The Horizon incident owner is Drew Fox.",
+            "document_title": "Horizon engineering note. The Horizon incident owner is Drew Fox.",
+            "score": 0.03226,
+            "evidence_text": "The Horizon incident owner is Drew Fox.",
+            "evidence_units": [
+              {
+                "entity": [
+                  "horizon"
+                ],
+                "relation": [
+                  "incident",
+                  "owner"
+                ],
+                "value": "Drew Fox",
+                "text": "The Horizon incident owner is Drew Fox."
+              }
+            ],
+            "evidence_conflict": true,
+            "evidence_ambiguous": false,
+            "requested_entities": [
+              "horizon"
+            ]
+          }
+        ],
+        "trace": [
+          {
+            "step": "plan",
+            "detail": "Search documents, assemble evidence, and validate source references."
+          },
+          {
+            "step": "retrieve",
+            "detail": "Hybrid TF-IDF + BM25 retrieval and lexical reranking returned 2 chunks; coverage-aware evidence selection retained 2 sources."
+          },
+          {
+            "step": "clarify",
+            "detail": "Evidence has incompatible values for an entity/relation, or multiple applicable entities without a requested scope."
+          },
+          {
+            "step": "answer",
+            "detail": "Requested clarification about conflicting passages."
+          },
+          {
+            "step": "validate",
+            "detail": "Source reference IDs checked; semantic faithfulness requires separate review."
+          }
+        ],
+        "mode": "clarification",
+        "warning": null,
+        "citation_check": {
+          "valid": false,
+          "invalid": [],
+          "cited_count": 0,
+          "note": "Checks source references, not semantic faithfulness."
+        },
+        "latency_ms": 2.6
+      }
+    },
+    {
+      "id": "b06",
+      "category": "cross_document_prefix_conflict",
+      "mode": "ollama",
+      "success": true,
+      "partial_fragment_present": null,
+      "error": null,
+      "total_ms": 1.149209000000262,
+      "retrieval_ms": 0.9874160000000742,
+      "generation_ms": null,
+      "result": {
+        "answer": "I found conflicting or ambiguous evidence. Which project or document do you mean?",
+        "sources": [
+          {
+            "id": "0bb74a613ee04f219395ff5154853eed",
+            "document_id": "5a925db40d8d474ba3eb0f856bbd1175",
+            "name": "one.txt",
+            "page": 1,
+            "text": "Horizon engineering note. The Horizon incident owner is Drew.",
+            "document_title": "Horizon engineering note. The Horizon incident owner is Drew.",
+            "score": 0.03279,
+            "evidence_text": "The Horizon incident owner is Drew.",
+            "evidence_units": [
+              {
+                "entity": [
+                  "horizon"
+                ],
+                "relation": [
+                  "incident",
+                  "owner"
+                ],
+                "value": "Drew",
+                "text": "The Horizon incident owner is Drew."
+              }
+            ],
+            "evidence_conflict": true,
+            "evidence_ambiguous": false,
+            "requested_entities": [
+              "horizon"
+            ]
+          },
+          {
+            "id": "da36436e13c84d69a893069581fafd70",
+            "document_id": "8578d2ba65d747a2be2897fb0e7947c4",
+            "name": "two.txt",
+            "page": 1,
+            "text": "Horizon engineering note. The Horizon incident owner is Drew Fox.",
+            "document_title": "Horizon engineering note. The Horizon incident owner is Drew Fox.",
+            "score": 0.03226,
+            "evidence_text": "The Horizon incident owner is Drew Fox.",
+            "evidence_units": [
+              {
+                "entity": [
+                  "horizon"
+                ],
+                "relation": [
+                  "incident",
+                  "owner"
+                ],
+                "value": "Drew Fox",
+                "text": "The Horizon incident owner is Drew Fox."
+              }
+            ],
+            "evidence_conflict": true,
+            "evidence_ambiguous": false,
+            "requested_entities": [
+              "horizon"
+            ]
+          }
+        ],
+        "trace": [
+          {
+            "step": "plan",
+            "detail": "Search documents, assemble evidence, and validate source references."
+          },
+          {
+            "step": "retrieve",
+            "detail": "Hybrid TF-IDF + BM25 retrieval and lexical reranking returned 2 chunks; coverage-aware evidence selection retained 2 sources."
+          },
+          {
+            "step": "clarify",
+            "detail": "Evidence has incompatible values for an entity/relation, or multiple applicable entities without a requested scope."
+          },
+          {
+            "step": "answer",
+            "detail": "Requested clarification about conflicting passages."
+          },
+          {
+            "step": "validate",
+            "detail": "Source reference IDs checked; semantic faithfulness requires separate review."
+          }
+        ],
+        "mode": "clarification",
+        "warning": null,
+        "citation_check": {
+          "valid": false,
+          "invalid": [],
+          "cited_count": 0,
+          "note": "Checks source references, not semantic faithfulness."
+        },
+        "latency_ms": 1.1
+      }
+    }
+  ],
+  "summaries": {
+    "extractive": {
+      "cross_document_prefix_conflict": {
+        "n": 2,
+        "successes": 2
+      },
+      "overlap_fragment": {
+        "n": 4,
+        "successes": 4
+      }
+    },
+    "ollama": {
+      "cross_document_prefix_conflict": {
+        "n": 2,
+        "successes": 2
+      },
+      "overlap_fragment": {
+        "n": 4,
+        "successes": 4
+      }
+    }
+  }
+}

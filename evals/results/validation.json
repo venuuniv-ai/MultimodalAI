@@ -1,0 +1,42 @@
+{
+  "application_identical_to_git_HEAD": true,
+  "existing_datasets_and_reports_preserved": true,
+  "tfidf_raw_ranks_and_aggregates_verified": 471,
+  "bm25_raw_ranks_and_aggregates_verified": 471,
+  "hybrid_score_sum_raw_ranks_and_aggregates_verified": 471,
+  "hybrid_rrf_raw_ranks_and_aggregates_verified": 471,
+  "production_search_raw_ranks_and_aggregates_verified": 471,
+  "full_pipeline_raw_ranks_and_aggregates_verified": 471,
+  "extractive_answer_presence_and_denominators_verified": 157,
+  "ollama_answer_presence_and_denominators_verified": 157,
+  "extractive_HTTP_outcomes_verified": 512,
+  "ollama_HTTP_outcomes_verified": 24,
+  "unreviewed_human_rows": 406,
+  "secret_pattern_matches": [],
+  "unignored_build_cache_db_log_files": [],
+  "git_commit": "c70e9c60480b4d441eb6e3959bb9bb578f65acaa",
+  "checks_executed": {
+    "python_tests": {
+      "command": ".venv/bin/python -m pytest backend/tests evals/tests -q",
+      "passed": 60,
+      "failed": 0
+    },
+    "frontend_build": {
+      "command": "npm run build",
+      "exit_code": 0
+    },
+    "browser_tests": {
+      "command": "npm run test:e2e",
+      "passed": 2,
+      "failed": 0
+    },
+    "report_consistency": {
+      "command": ".venv/bin/python -m evals.report --check",
+      "exit_code": 0
+    },
+    "whitespace": {
+      "command": "git diff --check",
+      "exit_code": 0
+    }
+  }
+}

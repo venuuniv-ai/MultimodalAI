@@ -1,0 +1,8 @@
+{
+  "phase": "human_review_artifact_write",
+  "error": "ValueError: relative output path passed to relative_to(absolute ROOT)",
+  "application_requests_completed": true,
+  "raw_full_report_saved": false,
+  "preserved_response_worksheet": "failed-report-write-human-review.csv",
+  "action": "Fix output path resolution, checkpoint raw measurements before optional artifacts, and rerun unchanged application/dataset/scoring."
+}

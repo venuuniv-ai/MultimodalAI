@@ -1,0 +1,249 @@
+{
+  "exclusive_presence_failures": [
+    {
+      "id": "h009",
+      "category": "paraphrase",
+      "root_cause": "relation_and_whole_query_overlap_mismatch",
+      "raw_recall10": 1.0,
+      "focused_expected_present": false,
+      "abstained": true
+    },
+    {
+      "id": "h010",
+      "category": "paraphrase",
+      "root_cause": "relation_and_whole_query_overlap_mismatch",
+      "raw_recall10": 1.0,
+      "focused_expected_present": false,
+      "abstained": false
+    },
+    {
+      "id": "h020",
+      "category": "paraphrase",
+      "root_cause": "relation_and_whole_query_overlap_mismatch",
+      "raw_recall10": 1.0,
+      "focused_expected_present": false,
+      "abstained": true
+    },
+    {
+      "id": "h021",
+      "category": "paraphrase",
+      "root_cause": "relation_and_whole_query_overlap_mismatch",
+      "raw_recall10": 1.0,
+      "focused_expected_present": false,
+      "abstained": false
+    },
+    {
+      "id": "h031",
+      "category": "paraphrase",
+      "root_cause": "relation_and_whole_query_overlap_mismatch",
+      "raw_recall10": 1.0,
+      "focused_expected_present": false,
+      "abstained": true
+    },
+    {
+      "id": "h032",
+      "category": "paraphrase",
+      "root_cause": "relation_and_whole_query_overlap_mismatch",
+      "raw_recall10": 1.0,
+      "focused_expected_present": false,
+      "abstained": false
+    },
+    {
+      "id": "h042",
+      "category": "paraphrase",
+      "root_cause": "relation_and_whole_query_overlap_mismatch",
+      "raw_recall10": 1.0,
+      "focused_expected_present": false,
+      "abstained": true
+    },
+    {
+      "id": "h043",
+      "category": "paraphrase",
+      "root_cause": "relation_and_whole_query_overlap_mismatch",
+      "raw_recall10": 1.0,
+      "focused_expected_present": false,
+      "abstained": false
+    },
+    {
+      "id": "h053",
+      "category": "paraphrase",
+      "root_cause": "relation_and_whole_query_overlap_mismatch",
+      "raw_recall10": 1.0,
+      "focused_expected_present": false,
+      "abstained": true
+    },
+    {
+      "id": "h054",
+      "category": "paraphrase",
+      "root_cause": "retrieval_top5_miss_and_focus_failure",
+      "raw_recall10": 1.0,
+      "focused_expected_present": false,
+      "abstained": false
+    },
+    {
+      "id": "h064",
+      "category": "paraphrase",
+      "root_cause": "relation_and_whole_query_overlap_mismatch",
+      "raw_recall10": 1.0,
+      "focused_expected_present": false,
+      "abstained": true
+    },
+    {
+      "id": "h065",
+      "category": "paraphrase",
+      "root_cause": "relation_and_whole_query_overlap_mismatch",
+      "raw_recall10": 1.0,
+      "focused_expected_present": false,
+      "abstained": false
+    },
+    {
+      "id": "h075",
+      "category": "paraphrase",
+      "root_cause": "relation_and_whole_query_overlap_mismatch",
+      "raw_recall10": 1.0,
+      "focused_expected_present": false,
+      "abstained": true
+    },
+    {
+      "id": "h076",
+      "category": "paraphrase",
+      "root_cause": "retrieval_top5_miss_and_focus_failure",
+      "raw_recall10": 1.0,
+      "focused_expected_present": false,
+      "abstained": false
+    },
+    {
+      "id": "h086",
+      "category": "paraphrase",
+      "root_cause": "relation_and_whole_query_overlap_mismatch",
+      "raw_recall10": 1.0,
+      "focused_expected_present": false,
+      "abstained": true
+    },
+    {
+      "id": "h087",
+      "category": "paraphrase",
+      "root_cause": "relation_and_whole_query_overlap_mismatch",
+      "raw_recall10": 1.0,
+      "focused_expected_present": false,
+      "abstained": false
+    },
+    {
+      "id": "h097",
+      "category": "paraphrase",
+      "root_cause": "relation_and_whole_query_overlap_mismatch",
+      "raw_recall10": 1.0,
+      "focused_expected_present": false,
+      "abstained": true
+    },
+    {
+      "id": "h098",
+      "category": "paraphrase",
+      "root_cause": "relation_and_whole_query_overlap_mismatch",
+      "raw_recall10": 1.0,
+      "focused_expected_present": false,
+      "abstained": true
+    },
+    {
+      "id": "h108",
+      "category": "paraphrase",
+      "root_cause": "relation_and_whole_query_overlap_mismatch",
+      "raw_recall10": 1.0,
+      "focused_expected_present": false,
+      "abstained": true
+    },
+    {
+      "id": "h109",
+      "category": "paraphrase",
+      "root_cause": "relation_and_whole_query_overlap_mismatch",
+      "raw_recall10": 1.0,
+      "focused_expected_present": false,
+      "abstained": true
+    },
+    {
+      "id": "h111",
+      "category": "cross_document",
+      "root_cause": "cross_entity_scope_conjunction",
+      "raw_recall10": 1.0,
+      "focused_expected_present": false,
+      "abstained": true
+    },
+    {
+      "id": "h112",
+      "category": "cross_document",
+      "root_cause": "cross_entity_scope_conjunction",
+      "raw_recall10": 1.0,
+      "focused_expected_present": false,
+      "abstained": true
+    },
+    {
+      "id": "h113",
+      "category": "cross_document",
+      "root_cause": "cross_entity_scope_conjunction",
+      "raw_recall10": 1.0,
+      "focused_expected_present": false,
+      "abstained": true
+    },
+    {
+      "id": "h114",
+      "category": "cross_document",
+      "root_cause": "cross_entity_scope_conjunction",
+      "raw_recall10": 1.0,
+      "focused_expected_present": false,
+      "abstained": true
+    },
+    {
+      "id": "h115",
+      "category": "cross_document",
+      "root_cause": "cross_entity_scope_conjunction",
+      "raw_recall10": 1.0,
+      "focused_expected_present": false,
+      "abstained": true
+    },
+    {
+      "id": "h116",
+      "category": "cross_document",
+      "root_cause": "cross_entity_scope_conjunction",
+      "raw_recall10": 1.0,
+      "focused_expected_present": false,
+      "abstained": true
+    },
+    {
+      "id": "h117",
+      "category": "cross_document",
+      "root_cause": "cross_entity_scope_conjunction",
+      "raw_recall10": 1.0,
+      "focused_expected_present": false,
+      "abstained": true
+    },
+    {
+      "id": "h118",
+      "category": "cross_document",
+      "root_cause": "cross_entity_scope_conjunction",
+      "raw_recall10": 1.0,
+      "focused_expected_present": false,
+      "abstained": true
+    },
+    {
+      "id": "h119",
+      "category": "cross_document",
+      "root_cause": "cross_entity_scope_conjunction",
+      "raw_recall10": 1.0,
+      "focused_expected_present": false,
+      "abstained": true
+    },
+    {
+      "id": "h120",
+      "category": "cross_document",
+      "root_cause": "cross_entity_scope_conjunction",
+      "raw_recall10": 1.0,
+      "focused_expected_present": false,
+      "abstained": true
+    }
+  ],
+  "counts": {
+    "relation_and_whole_query_overlap_mismatch": 18,
+    "retrieval_top5_miss_and_focus_failure": 2,
+    "cross_entity_scope_conjunction": 10
+  }
+}

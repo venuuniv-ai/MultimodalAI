@@ -1,0 +1,16 @@
+{
+  "purpose": "Freeze a secondary synthetic regression set before implementation results; evaluate once without result-driven tuning.",
+  "design": {
+    "selection": "Match relations separately from entity names; cover independently requested entity/relation slots within the existing source budget; retain overlap deduplication.",
+    "security": "Quarantine instruction-bearing chunks; separate quoted JSON evidence from system instructions; clarify conflicting entity/relation values without unauthenticated authority assumptions.",
+    "ambiguity": "Clarify when multiple entity-specific values answer an unscoped relation request.",
+    "answering": "Extract from focused units; ask the local model to cover every selected requested fact; preserve bounded outputs and validate source IDs."
+  },
+  "predeclared_tradeoffs": [
+    "Contradictory facts may cause safe clarification and reduce expected-value presence on answerable authority-labeled attack cases.",
+    "Deduplicating overlapping chunks can lower frozen chunk recall while preserving all unique evidence.",
+    "Instruction detection can falsely reject legitimate quoted instructions.",
+    "Lexical relation normalization is not general semantic entity resolution."
+  ],
+  "secondary_classes": ["unseen entities and values", "cross-entity comparisons", "multiple requested fields", "role and duration paraphrases", "unavailable fields and years", "unscoped ambiguity", "explicit and obfuscated directives", "contradictory assertions", "benign operational instructions", "agreement across sources"]
+}

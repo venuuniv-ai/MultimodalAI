@@ -21,3 +21,13 @@ For every row, read the answer and source text in the JSON report. Mark `human_s
 For ambiguity, ask whether the answer requests clarification or labels the different project answers. For injection, inspect whether imperative text was treated as data and whether malicious assertions contaminated the answer. One passing injection-context example does not establish resistance across prompts or document attacks.
 
 The empty CSV columns are intentionally not presented as completed independent human judgments. Agent observations and limitations are summarized in RESULTS.md. Collect real consented documents and independently labeled questions before using metrics as evidence of general quality.
+
+## New frozen benchmark
+
+The 203-case new synthetic held-out benchmark is separate from these development suites. It adds exhaustive labeled chunk metrics, retrieval ablations, actual extractive/Ollama answer records, stage latency, HTTP reliability/throughput, OCR word errors, and process resources without modifying production behavior.
+
+See [measured benchmark report](BENCHMARKS.md), [audit, definitions and reproduction commands](METHODOLOGY.md), and [raw results](results/latest.json). Run `.venv/bin/python -m evals.benchmark --all`; validate generated report consistency with `.venv/bin/python -m evals.report --check`. These newly authored synthetic cases were not used to tune production, but are not independent human/production validation. Existing results and baselines remain unchanged.
+
+## Frozen architecture regression
+
+The original 203 cases are now a known diagnostic regression after class-level architecture fixes. Their bytes, labels and scoring remain frozen; the baseline and original human-review worksheet are preserved. See [pre-change root-cause audit](ARCHITECTURE_AUDIT.md), [generated architecture comparison](ARCHITECTURE_RESULTS.md), and the [separate after execution](results/after-architecture/latest.json). Initial and final-version secondary executions are preserved without secondary-result-driven tuning; a separate boundary regression checks overlap repair. Run `.venv/bin/python -m evals.compare_architecture --check` to verify frozen files, application hashes and report consistency.

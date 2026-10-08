@@ -1,0 +1,222 @@
+{
+  "dataset_sha256": "6c66900c65bb4386302d041f670b909ed460f5d2ea6ca9547113c174fca42c71",
+  "case_count": 203,
+  "documents": [
+    {
+      "name": "juniper.txt",
+      "modality": "text",
+      "bytes": 6600,
+      "sha256": "757997486d3bc5b5f23bb6a49c8294cac075106fea4bcd9546bdd655d82670ff"
+    },
+    {
+      "name": "cobalt.txt",
+      "modality": "text",
+      "bytes": 6548,
+      "sha256": "e65515a4a685dfe0babd280b72972c39eaf60c95070fc13de0d4dd6fc9ff10ee"
+    },
+    {
+      "name": "willow.txt",
+      "modality": "text",
+      "bytes": 6549,
+      "sha256": "20cef9436ae36b4b149408aea6a72968cb770c49c4aa389a5973e348f7b09cba"
+    },
+    {
+      "name": "saffron.txt",
+      "modality": "text",
+      "bytes": 6597,
+      "sha256": "4747700ab47cbad95e4eb3220f7898c3114be5cc34b254106943e82849ffe0f8"
+    },
+    {
+      "name": "quartz.pdf",
+      "modality": "pdf",
+      "bytes": 8567,
+      "sha256": "cbeca41cdb902b222ad7a907041a2aefb851acd3fc1c90dc52134cf618d00914"
+    },
+    {
+      "name": "harbor.pdf",
+      "modality": "pdf",
+      "bytes": 8565,
+      "sha256": "4d0b83a9e2e8d32f017e97163c03c857dda4802063d3d81eb6f78bccb6ab19d1"
+    },
+    {
+      "name": "meadow.pdf",
+      "modality": "pdf",
+      "bytes": 8570,
+      "sha256": "748801e9d01b1dcad4752defd07a2ca4cf7a2aeefe1ee4db8186b4ea82ac5486"
+    },
+    {
+      "name": "topaz.pdf",
+      "modality": "pdf",
+      "bytes": 8523,
+      "sha256": "b9a40f22f58cd92abca40d61ee84fcd8288d30a3b326999912ef991c6eb794a6"
+    },
+    {
+      "name": "orchid.png",
+      "modality": "ocr",
+      "bytes": 58607,
+      "sha256": "a8314b7f01f47e685d7803ac6ec5f540730bd91721cbd9c897ce00b0a2922842"
+    },
+    {
+      "name": "solstice.png",
+      "modality": "ocr",
+      "bytes": 58787,
+      "sha256": "326b4a27308d84d862ed1234143b201d52a90943ed256a017c6f6ae458587ff9"
+    },
+    {
+      "name": "shipments.csv",
+      "modality": "csv",
+      "bytes": 286,
+      "sha256": "ebc9efeaa27304815f367fc0380a3a7f364188691341b9098a8ba9de787f8f72"
+    },
+    {
+      "name": "attack-01.txt",
+      "modality": "text",
+      "bytes": 120,
+      "sha256": "40862c70b43bc3ee002e6b82894d294be4e1822f73b26deaad47a0228c570e97"
+    },
+    {
+      "name": "attack-02.txt",
+      "modality": "text",
+      "bytes": 129,
+      "sha256": "faa670ed9f48609b630c0dd8820a254a8855f71d8319d0eeb82d6fa7de17bbe1"
+    },
+    {
+      "name": "attack-03.txt",
+      "modality": "text",
+      "bytes": 140,
+      "sha256": "2e5c74dfa0ac6a02a9b1ab0b4a475e98ff0aefb9b2ddb398b1f4290abaa91600"
+    },
+    {
+      "name": "attack-04.txt",
+      "modality": "text",
+      "bytes": 125,
+      "sha256": "7ddd2624e6694252b6cd27773cff3b85724a1c8ea892a2e0a692177cc6b913af"
+    },
+    {
+      "name": "attack-05.txt",
+      "modality": "text",
+      "bytes": 112,
+      "sha256": "cdc64ebe2156743347df7b209c9ef2c1c94a3cea72a6544c8883fcf65bb1d536"
+    },
+    {
+      "name": "attack-06.txt",
+      "modality": "text",
+      "bytes": 118,
+      "sha256": "4f6bdc3c1e3ee9cc49aaf1a7ee46c9118929f115d228ff70ab8ce8c7cf03a6d5"
+    },
+    {
+      "name": "attack-07.txt",
+      "modality": "text",
+      "bytes": 129,
+      "sha256": "134e2805611212bc6f43c1eea96cc5db1fc4b5958b28c390405a91c94b6e99be"
+    },
+    {
+      "name": "attack-08.txt",
+      "modality": "text",
+      "bytes": 138,
+      "sha256": "3165b7773aab2657316fcc92e12db0afe0e2b31675ed048255040013fc48321b"
+    },
+    {
+      "name": "attack-09.txt",
+      "modality": "text",
+      "bytes": 123,
+      "sha256": "41fcea0c13fdc56884a998c6867ead462d7c9fb4b4162a25898b356aa80522c3"
+    },
+    {
+      "name": "attack-10.txt",
+      "modality": "text",
+      "bytes": 116,
+      "sha256": "f0a30c545342c8b60605da64056086bf7e79dde0a4b6f8180e88327440b3c3dc"
+    },
+    {
+      "name": "attack-11.txt",
+      "modality": "text",
+      "bytes": 120,
+      "sha256": "f3ad5118136aa57252ce9280d1f40a55a95a724d3a28b9ea479295db789a1742"
+    },
+    {
+      "name": "attack-12.txt",
+      "modality": "text",
+      "bytes": 129,
+      "sha256": "3d98891c570e0e7ee3bb4ab2354f59551461bca357922696ed95eb144a0a548d"
+    },
+    {
+      "name": "attack-13.txt",
+      "modality": "text",
+      "bytes": 140,
+      "sha256": "5f76a64fecd456021d00f4c822229085dec94045d12690645ed2dc43f649dbe4"
+    },
+    {
+      "name": "attack-14.txt",
+      "modality": "text",
+      "bytes": 125,
+      "sha256": "fae2bd7798c9778bb365af4d37127e2e728e49eeea085db8e685b40b6acf94b1"
+    },
+    {
+      "name": "attack-15.txt",
+      "modality": "text",
+      "bytes": 112,
+      "sha256": "e8260f7d8bf825cadeeae47fb4675933ad759cd240f4eca04d196379132d8c24"
+    },
+    {
+      "name": "attack-16.txt",
+      "modality": "text",
+      "bytes": 118,
+      "sha256": "2ecf1bef1ebece47f75a6b9ce95e64d3e46e5382f3cb08aef231895eff02dc4d"
+    },
+    {
+      "name": "attack-17.txt",
+      "modality": "text",
+      "bytes": 129,
+      "sha256": "de8f87df90940694b6175a6f1c0134c1efc450a76458cdaa082b9edcb6381753"
+    },
+    {
+      "name": "attack-18.txt",
+      "modality": "text",
+      "bytes": 138,
+      "sha256": "90ba100ca732336757179633d59f7541a2101b47d2fdb5d398d38949662255d5"
+    },
+    {
+      "name": "attack-19.txt",
+      "modality": "text",
+      "bytes": 123,
+      "sha256": "b449c390348258a5f6a0e15e2679bb4eacd4a7e3e310f130921e204cbd71013b"
+    },
+    {
+      "name": "attack-20.txt",
+      "modality": "text",
+      "bytes": 116,
+      "sha256": "a8eb11bef556d7fbe87bcef0d02f67ca81507fbb950c16af05f32b5b42227721"
+    },
+    {
+      "name": "attack-21.txt",
+      "modality": "text",
+      "bytes": 120,
+      "sha256": "b7665e72a7839102578aa2499cbd8da1249de653889beddfcab427ad94c0acba"
+    },
+    {
+      "name": "attack-22.txt",
+      "modality": "text",
+      "bytes": 129,
+      "sha256": "3665a39093223b0d058407b6abb95dc34f648116c9f75e5cff7a11118174bdce"
+    },
+    {
+      "name": "attack-23.txt",
+      "modality": "text",
+      "bytes": 140,
+      "sha256": "adef8307cd948b62bd42160e37f3c50794c9df7a06188202f6f5c703d3221887"
+    },
+    {
+      "name": "attack-24.txt",
+      "modality": "text",
+      "bytes": 125,
+      "sha256": "637b4dddd74ef34e74b9050a2182c2b10eab6d210e9cb976538f07c60257598d"
+    },
+    {
+      "name": "attack-25.txt",
+      "modality": "text",
+      "bytes": 112,
+      "sha256": "61e38f448b55b66533246c44105dedee92cc0b9a5c3c54b2ca553e1854190fd0"
+    }
+  ]
+}

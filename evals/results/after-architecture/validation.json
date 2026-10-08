@@ -1,0 +1,17 @@
+{
+  "primary_dataset_unchanged": true,
+  "original_human_worksheet_unchanged": true,
+  "review_viewer_records": 878,
+  "review_filters_and_export": "passed",
+  "subjective_export_fields_all_blank": true,
+  "full_benchmark_rows_per_mode": 203,
+  "answer_execution_errors": 0,
+  "python_tests": "81 passed",
+  "frontend_build": "passed",
+  "product_browser_tests": "3 passed",
+  "comparison_report_check": "passed",
+  "baseline_report_check": "passed",
+  "git_diff_check": "passed",
+  "head": "c70e9c60480b4d441eb6e3959bb9bb578f65acaa",
+  "committed_or_pushed": false
+}

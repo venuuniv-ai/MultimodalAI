@@ -60,14 +60,14 @@ flowchart LR
   UI --> Reports[Recorded evaluation summaries]
 ```
 
-Chunks contain up to 180 words with 35-word overlap. CSV rows have row metadata. Reciprocal rank fusion combines TF-IDF and BM25 rankings; a lexical reranker and focused sentence selection reduce irrelevant evidence. Evidence planning groups entity/relation/value claims, normalizes common relation wording, and preserves requested facts across sources within the five-source cap. Field/year checks refuse unsupported questions. Conflicting values and unscoped multi-entity ambiguity trigger clarification. Generic role/control-language detection quarantines instruction-bearing chunks; Ollama receives structured, explicitly untrusted evidence. Proven overlapping chunk continuations are reconciled without suppressing cross-document conflicts.
+Chunks contain up to 180 words with 35-word overlap. CSV rows have row metadata. Reciprocal rank fusion combines TF-IDF and BM25 rankings; a lexical reranker and focused sentence selection reduce irrelevant evidence. Document-title hints and explicit paraphrase aliases cover some known query forms. Field/year checks refuse certain unsupported questions. Three generic project-question forms request clarification when distinct evidence passages conflict. A narrow imperative-pattern filter removes known instruction-like attack sentences.
 
 These are heuristics, not a semantic retrieval model, general entity resolution, or broad injection defense. Citations prove references exist, not that every assertion is true. The query index is rebuilt per request and suits small libraries. Tools are selected explicitly; this is a controlled workflow rather than an autonomous model-action loop.
 
 ## Verify
 
 ```bash
-.venv/bin/python -m pytest backend/tests evals/tests -q
+.venv/bin/python -m pytest backend/tests -q
 .venv/bin/python scripts/evaluate_expanded.py
 .venv/bin/python scripts/evaluate_expanded.py --mode ollama
 .venv/bin/python scripts/compare_evaluations.py
@@ -80,30 +80,6 @@ npm run test:e2e
 Backend tests cover parsing, uploads, storage, citations, tool values, negative evidence, scoping, clarification, evaluation denominators, report summaries, and CSV metadata. Playwright checks document research, evidence inspection, export, CSV controls, the evaluation dashboard, and mobile overflow. Browser tests use `.logs/browser-test.sqlite3`; evaluations use temporary databases. They leave the user library untouched.
 
 Read [recorded results](evals/RESULTS.md), [evaluation methodology](evals/README.md), and the CSV review worksheets. The 62 synthetic questions were authored during development and informed improvements; they are not an independent test. Literal expected-text matching is a proxy, not semantic faithfulness. Latency is complete sequential response time, not TTFT, token throughput, or concurrent capacity. Local Ollama and OCR have been exercised; remote CI and Docker execution have not.
-
-## Latest verified benchmark results
-
-The unchanged 203-case benchmark was rerun after the evidence architecture fixes on Apple M2 with 8 GiB RAM and local `qwen2.5:1.5b`. It is now a known diagnostic regression: its failure classes informed the fixes. These are synthetic, mechanically scored measurements, not independently reviewed semantic accuracy.
-
-| Metric | Before | Latest verified |
-| --- | --- | --- |
-| Production Recall@5 / Recall@10 | 98.73% / 100% | 98.73% / 100% |
-| Full evidence Recall@5 / Recall@10 | 83.44% / 83.44% | 98.73% / 98.73% |
-| Full evidence MRR@10 / nDCG@5 | 0.747134 / 0.762687 | 0.984076 / 0.978390 |
-| All expected values present, each answer mode | 127/157 (80.89%) | 152/157 (96.82%) |
-| Cross-document completeness, each mode | 0/10 | 10/10 |
-| Correct unavailable-fact refusal, each mode | 35/35 | 35/35 |
-| Ambiguity clarification/refusal, each mode | 4/6 | 6/6 |
-| Attack canary emission, extractive / Ollama | 15/25 / 5/25 | 0/25 / 0/25 |
-| Extractive P50 / P95 response latency | 10.884 / 14.768 ms | 11.386 / 25.003 ms |
-| Ollama P50 / P95 response latency | 542.959 / 1,503.608 ms | 645.643 / 1,311.477 ms |
-| HTTP contract success, extractive / Ollama | 512/512 / 24/24 | 512/512 / 24/24 |
-
-The five remaining completeness misses are clarifications of contradictory factual assertions; the system has no authenticated authority designation to choose between them. Extractive P95 rose 69.30%, and Ollama median rose 18.91%; local timings are sensitive to background load. Valid source IDs and matching answer strings do not establish truth or citation support.
-
-A separately frozen 33-case secondary regression achieved 21/21 factual completeness, 7/7 unavailable-fact refusals, 3/3 ambiguity handling, and 0/3 instruction canary emissions in each mode. Initial and final-version runs are preserved; secondary outcomes did not guide tuning. Final validation passed 81 Python tests, three product browser tests, and the frontend build.
-
-[Complete before/after report and limitations](evals/ARCHITECTURE_RESULTS.md) · [Verified raw results](evals/results/after-architecture/latest.json) · [Secondary results](evals/results/secondary-final.json) · [Offline human-review viewer](evals/results/review.html). The original 406-row review worksheet remains unchanged; subjective judgments remain blank. The following generated benchmark section preserves the original baseline.
 
 <!-- BENCHMARKS:BEGIN -->
 ## Benchmarks
@@ -154,11 +130,3 @@ The image includes Tesseract. Host Ollama is not reachable at the container's lo
 - [Validation record](evals/VALIDATION.md)
 
 Build a reviewable source archive with `.venv/bin/python scripts/package.py`. It excludes user databases, local models, dependencies, and logs. This code does not implement CUDA, TensorRT, vLLM, Triton, fine-tuning, LangGraph, FAISS, cloud deployment, or Kubernetes; list only implemented capabilities on your resume.
-
-<!-- ARCHITECTURE:BEGIN -->
-## Evidence architecture regression
-
-The frozen 203-case set now serves as a known diagnostic regression after class-level architecture fixes. Full evidence Recall@5 is 98.73%; extractive/Ollama all-values presence is 96.82% / 96.82%. Cross-document presence and attack outcomes are detailed in the comparison; safe conflict clarification can reduce answer availability.
-
-[Before/after results, tradeoffs and secondary regression](evals/ARCHITECTURE_RESULTS.md) · [After raw output](evals/results/after-architecture/latest.json). The original baseline above remains preserved; these are synthetic proxy measurements, not independent semantic accuracy.
-<!-- ARCHITECTURE:END -->

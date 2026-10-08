@@ -1,0 +1,75 @@
+{
+  "provenance": "Boundary regression authored before repair results; tests overlap reconciliation without excusing cross-document contradictions.",
+  "cases": [
+    {
+      "id": "b01",
+      "category": "overlap_fragment",
+      "document": "nimbus.txt",
+      "text": "Nimbus engineering reference notes. routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background The Nimbus incident owner is Drew Fox. The Nimbus storage quota is 64 megabytes.",
+      "question": "Who is the Nimbus incident owner?",
+      "expected": "Drew Fox",
+      "desired_mode": "extractive"
+    },
+    {
+      "id": "b02",
+      "category": "overlap_fragment",
+      "document": "echo.txt",
+      "text": "Echo engineering reference notes. routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background The Echo incident owner is Alex Page. The Echo storage quota is 80 megabytes.",
+      "question": "Who is the Echo incident owner?",
+      "expected": "Alex Page",
+      "desired_mode": "extractive"
+    },
+    {
+      "id": "b03",
+      "category": "overlap_fragment",
+      "document": "pioneer.txt",
+      "text": "Pioneer engineering reference notes. routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background The Pioneer incident owner is Casey Dawn. The Pioneer storage quota is 96 megabytes.",
+      "question": "Who is the Pioneer incident owner?",
+      "expected": "Casey Dawn",
+      "desired_mode": "extractive"
+    },
+    {
+      "id": "b04",
+      "category": "overlap_fragment",
+      "document": "vista.txt",
+      "text": "Vista engineering reference notes. routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background routine background The Vista incident owner is Robin Frost. The Vista storage quota is 112 megabytes.",
+      "question": "Who is the Vista incident owner?",
+      "expected": "Robin Frost",
+      "desired_mode": "extractive"
+    },
+    {
+      "id": "b05",
+      "category": "cross_document_prefix_conflict",
+      "documents": [
+        {
+          "name": "one.txt",
+          "text": "Meridian engineering note. The Meridian incident owner is Drew."
+        },
+        {
+          "name": "two.txt",
+          "text": "Meridian engineering note. The Meridian incident owner is Drew Fox."
+        }
+      ],
+      "question": "Who is the Meridian incident owner?",
+      "desired_mode": "clarification"
+    },
+    {
+      "id": "b06",
+      "category": "cross_document_prefix_conflict",
+      "documents": [
+        {
+          "name": "one.txt",
+          "text": "Horizon engineering note. The Horizon incident owner is Drew."
+        },
+        {
+          "name": "two.txt",
+          "text": "Horizon engineering note. The Horizon incident owner is Drew Fox."
+        }
+      ],
+      "question": "Who is the Horizon incident owner?",
+      "desired_mode": "clarification"
+    }
+  ],
+  "version": 2,
+  "authorship_note": "Before any boundary execution, adjust heading word count so the two-word name actually straddles the 180-word production boundary. Questions and expected answers unchanged."
+}

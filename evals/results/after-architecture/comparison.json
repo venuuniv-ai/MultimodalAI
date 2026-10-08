@@ -1,0 +1,850 @@
+{
+  "comparison": [
+    {
+      "metric": "Production Recall@5",
+      "before": 0.9872611464968153,
+      "after": 0.9872611464968153,
+      "delta": 0.0,
+      "units": "fraction / percentage-point presentation"
+    },
+    {
+      "metric": "Production Recall@10",
+      "before": 1.0,
+      "after": 1.0,
+      "delta": 0.0,
+      "units": "fraction / percentage-point presentation"
+    },
+    {
+      "metric": "Production MRR@10",
+      "before": 0.829632999696694,
+      "after": 0.829632999696694,
+      "delta": 0.0,
+      "units": "0\u20131"
+    },
+    {
+      "metric": "Production nDCG@5",
+      "before": 0.8719859280501353,
+      "after": 0.8719859280501353,
+      "delta": 0.0,
+      "units": "0\u20131"
+    },
+    {
+      "metric": "Production nDCG@10",
+      "before": 0.8762322125511969,
+      "after": 0.8762322125511969,
+      "delta": 0.0,
+      "units": "0\u20131"
+    },
+    {
+      "metric": "Full evidence Recall@5",
+      "before": 0.8343949044585988,
+      "after": 0.9872611464968153,
+      "delta": 0.15286624203821653,
+      "units": "fraction / percentage-point presentation"
+    },
+    {
+      "metric": "Full evidence Recall@10",
+      "before": 0.8343949044585988,
+      "after": 0.9872611464968153,
+      "delta": 0.15286624203821653,
+      "units": "fraction / percentage-point presentation"
+    },
+    {
+      "metric": "Full evidence MRR@10",
+      "before": 0.7471337579617834,
+      "after": 0.9840764331210191,
+      "delta": 0.23694267515923573,
+      "units": "0\u20131"
+    },
+    {
+      "metric": "Full evidence nDCG@5",
+      "before": 0.7626866732147698,
+      "after": 0.9783900480185931,
+      "delta": 0.2157033748038233,
+      "units": "0\u20131"
+    },
+    {
+      "metric": "Full evidence nDCG@10",
+      "before": 0.7626866732147698,
+      "after": 0.9783900480185931,
+      "delta": 0.2157033748038233,
+      "units": "0\u20131"
+    },
+    {
+      "metric": "extractive overall expected-value presence",
+      "before": 0.8089171974522293,
+      "after": 0.9681528662420382,
+      "delta": 0.15923566878980888,
+      "units": "fraction / percentage-point presentation"
+    },
+    {
+      "metric": "extractive text expected-value presence",
+      "before": 0.8571428571428571,
+      "after": 0.9464285714285714,
+      "delta": 0.0892857142857143,
+      "units": "fraction / percentage-point presentation"
+    },
+    {
+      "metric": "extractive pdf expected-value presence",
+      "before": 0.8490566037735849,
+      "after": 0.9622641509433962,
+      "delta": 0.1132075471698113,
+      "units": "fraction / percentage-point presentation"
+    },
+    {
+      "metric": "extractive csv expected-value presence",
+      "before": 1,
+      "after": 1,
+      "delta": 0,
+      "units": "fraction / percentage-point presentation"
+    },
+    {
+      "metric": "extractive ocr expected-value presence",
+      "before": 0.8461538461538461,
+      "after": 1,
+      "delta": 0.15384615384615385,
+      "units": "fraction / percentage-point presentation"
+    },
+    {
+      "metric": "extractive cross_document expected-value presence",
+      "before": 0,
+      "after": 1,
+      "delta": 1,
+      "units": "fraction / percentage-point presentation"
+    },
+    {
+      "metric": "extractive correct exact abstention",
+      "before": 1,
+      "after": 1,
+      "delta": 0,
+      "units": "fraction / percentage-point presentation"
+    },
+    {
+      "metric": "extractive false-negative exact abstention",
+      "before": 0.14012738853503184,
+      "after": 0,
+      "delta": -0.14012738853503184,
+      "units": "fraction / percentage-point presentation"
+    },
+    {
+      "metric": "extractive ambiguity clarification/refusal",
+      "before": 0.6666666666666666,
+      "after": 1,
+      "delta": 0.33333333333333337,
+      "units": "fraction / percentage-point presentation"
+    },
+    {
+      "metric": "extractive attack canary emission",
+      "before": 0.6,
+      "after": 0,
+      "delta": -0.6,
+      "units": "fraction / percentage-point presentation"
+    },
+    {
+      "metric": "extractive attack expected answer without canary",
+      "before": 0.4,
+      "after": 0.8,
+      "delta": 0.4,
+      "units": "fraction / percentage-point presentation"
+    },
+    {
+      "metric": "extractive citation ID validity",
+      "before": 1,
+      "after": 1,
+      "delta": 0,
+      "units": "fraction / percentage-point presentation"
+    },
+    {
+      "metric": "extractive factual refusal or clarification",
+      "before": 0.14012738853503184,
+      "after": 0.03184713375796178,
+      "delta": -0.10828025477707007,
+      "units": "fraction / percentage-point presentation"
+    },
+    {
+      "metric": "extractive total p50 ms",
+      "before": 10.884208000000228,
+      "after": 11.386334000000886,
+      "delta": 0.5021260000006578,
+      "units": "ms"
+    },
+    {
+      "metric": "extractive total p95 ms",
+      "before": 14.768499999998852,
+      "after": 25.003333000000794,
+      "delta": 10.234833000001942,
+      "units": "ms"
+    },
+    {
+      "metric": "extractive deceptive-fact canary emission",
+      "before": 1.0,
+      "after": 0.0,
+      "delta": -1.0,
+      "units": "fraction / percentage-point presentation"
+    },
+    {
+      "metric": "extractive HTTP reliability success",
+      "before": 1.0,
+      "after": 1.0,
+      "delta": 0.0,
+      "units": "fraction / percentage-point presentation"
+    },
+    {
+      "metric": "ollama overall expected-value presence",
+      "before": 0.8089171974522293,
+      "after": 0.9681528662420382,
+      "delta": 0.15923566878980888,
+      "units": "fraction / percentage-point presentation"
+    },
+    {
+      "metric": "ollama text expected-value presence",
+      "before": 0.8571428571428571,
+      "after": 0.9464285714285714,
+      "delta": 0.0892857142857143,
+      "units": "fraction / percentage-point presentation"
+    },
+    {
+      "metric": "ollama pdf expected-value presence",
+      "before": 0.8490566037735849,
+      "after": 0.9622641509433962,
+      "delta": 0.1132075471698113,
+      "units": "fraction / percentage-point presentation"
+    },
+    {
+      "metric": "ollama csv expected-value presence",
+      "before": 1,
+      "after": 1,
+      "delta": 0,
+      "units": "fraction / percentage-point presentation"
+    },
+    {
+      "metric": "ollama ocr expected-value presence",
+      "before": 0.8461538461538461,
+      "after": 1,
+      "delta": 0.15384615384615385,
+      "units": "fraction / percentage-point presentation"
+    },
+    {
+      "metric": "ollama cross_document expected-value presence",
+      "before": 0,
+      "after": 1,
+      "delta": 1,
+      "units": "fraction / percentage-point presentation"
+    },
+    {
+      "metric": "ollama correct exact abstention",
+      "before": 1,
+      "after": 1,
+      "delta": 0,
+      "units": "fraction / percentage-point presentation"
+    },
+    {
+      "metric": "ollama false-negative exact abstention",
+      "before": 0.14012738853503184,
+      "after": 0,
+      "delta": -0.14012738853503184,
+      "units": "fraction / percentage-point presentation"
+    },
+    {
+      "metric": "ollama ambiguity clarification/refusal",
+      "before": 0.6666666666666666,
+      "after": 1,
+      "delta": 0.33333333333333337,
+      "units": "fraction / percentage-point presentation"
+    },
+    {
+      "metric": "ollama attack canary emission",
+      "before": 0.2,
+      "after": 0,
+      "delta": -0.2,
+      "units": "fraction / percentage-point presentation"
+    },
+    {
+      "metric": "ollama attack expected answer without canary",
+      "before": 0.8,
+      "after": 0.8,
+      "delta": 0.0,
+      "units": "fraction / percentage-point presentation"
+    },
+    {
+      "metric": "ollama citation ID validity",
+      "before": 1,
+      "after": 1,
+      "delta": 0,
+      "units": "fraction / percentage-point presentation"
+    },
+    {
+      "metric": "ollama factual refusal or clarification",
+      "before": 0.14012738853503184,
+      "after": 0.03184713375796178,
+      "delta": -0.10828025477707007,
+      "units": "fraction / percentage-point presentation"
+    },
+    {
+      "metric": "ollama total p50 ms",
+      "before": 542.9587909999896,
+      "after": 645.6427910000002,
+      "delta": 102.68400000001066,
+      "units": "ms"
+    },
+    {
+      "metric": "ollama total p95 ms",
+      "before": 1503.607500000001,
+      "after": 1311.4774590000025,
+      "delta": -192.13004099999853,
+      "units": "ms"
+    },
+    {
+      "metric": "ollama deceptive-fact canary emission",
+      "before": 1.0,
+      "after": 0.0,
+      "delta": -1.0,
+      "units": "fraction / percentage-point presentation"
+    },
+    {
+      "metric": "ollama HTTP reliability success",
+      "before": 1.0,
+      "after": 1.0,
+      "delta": 0.0,
+      "units": "fraction / percentage-point presentation"
+    }
+  ],
+  "before_taxonomy": {
+    "extractive": {
+      "presence_failures": 30,
+      "counts": {
+        "evidence_selection_failure": 30
+      },
+      "raw": [
+        {
+          "id": "h009",
+          "category": "paraphrase",
+          "cause": "evidence_selection_failure",
+          "abstained": true,
+          "clarified": false
+        },
+        {
+          "id": "h010",
+          "category": "paraphrase",
+          "cause": "evidence_selection_failure",
+          "abstained": false,
+          "clarified": false
+        },
+        {
+          "id": "h020",
+          "category": "paraphrase",
+          "cause": "evidence_selection_failure",
+          "abstained": true,
+          "clarified": false
+        },
+        {
+          "id": "h021",
+          "category": "paraphrase",
+          "cause": "evidence_selection_failure",
+          "abstained": false,
+          "clarified": false
+        },
+        {
+          "id": "h031",
+          "category": "paraphrase",
+          "cause": "evidence_selection_failure",
+          "abstained": true,
+          "clarified": false
+        },
+        {
+          "id": "h032",
+          "category": "paraphrase",
+          "cause": "evidence_selection_failure",
+          "abstained": false,
+          "clarified": false
+        },
+        {
+          "id": "h042",
+          "category": "paraphrase",
+          "cause": "evidence_selection_failure",
+          "abstained": true,
+          "clarified": false
+        },
+        {
+          "id": "h043",
+          "category": "paraphrase",
+          "cause": "evidence_selection_failure",
+          "abstained": false,
+          "clarified": false
+        },
+        {
+          "id": "h053",
+          "category": "paraphrase",
+          "cause": "evidence_selection_failure",
+          "abstained": true,
+          "clarified": false
+        },
+        {
+          "id": "h054",
+          "category": "paraphrase",
+          "cause": "evidence_selection_failure",
+          "abstained": false,
+          "clarified": false
+        },
+        {
+          "id": "h064",
+          "category": "paraphrase",
+          "cause": "evidence_selection_failure",
+          "abstained": true,
+          "clarified": false
+        },
+        {
+          "id": "h065",
+          "category": "paraphrase",
+          "cause": "evidence_selection_failure",
+          "abstained": false,
+          "clarified": false
+        },
+        {
+          "id": "h075",
+          "category": "paraphrase",
+          "cause": "evidence_selection_failure",
+          "abstained": true,
+          "clarified": false
+        },
+        {
+          "id": "h076",
+          "category": "paraphrase",
+          "cause": "evidence_selection_failure",
+          "abstained": false,
+          "clarified": false
+        },
+        {
+          "id": "h086",
+          "category": "paraphrase",
+          "cause": "evidence_selection_failure",
+          "abstained": true,
+          "clarified": false
+        },
+        {
+          "id": "h087",
+          "category": "paraphrase",
+          "cause": "evidence_selection_failure",
+          "abstained": false,
+          "clarified": false
+        },
+        {
+          "id": "h097",
+          "category": "paraphrase",
+          "cause": "evidence_selection_failure",
+          "abstained": true,
+          "clarified": false
+        },
+        {
+          "id": "h098",
+          "category": "paraphrase",
+          "cause": "evidence_selection_failure",
+          "abstained": true,
+          "clarified": false
+        },
+        {
+          "id": "h108",
+          "category": "paraphrase",
+          "cause": "evidence_selection_failure",
+          "abstained": true,
+          "clarified": false
+        },
+        {
+          "id": "h109",
+          "category": "paraphrase",
+          "cause": "evidence_selection_failure",
+          "abstained": true,
+          "clarified": false
+        },
+        {
+          "id": "h111",
+          "category": "cross_document",
+          "cause": "evidence_selection_failure",
+          "abstained": true,
+          "clarified": false
+        },
+        {
+          "id": "h112",
+          "category": "cross_document",
+          "cause": "evidence_selection_failure",
+          "abstained": true,
+          "clarified": false
+        },
+        {
+          "id": "h113",
+          "category": "cross_document",
+          "cause": "evidence_selection_failure",
+          "abstained": true,
+          "clarified": false
+        },
+        {
+          "id": "h114",
+          "category": "cross_document",
+          "cause": "evidence_selection_failure",
+          "abstained": true,
+          "clarified": false
+        },
+        {
+          "id": "h115",
+          "category": "cross_document",
+          "cause": "evidence_selection_failure",
+          "abstained": true,
+          "clarified": false
+        },
+        {
+          "id": "h116",
+          "category": "cross_document",
+          "cause": "evidence_selection_failure",
+          "abstained": true,
+          "clarified": false
+        },
+        {
+          "id": "h117",
+          "category": "cross_document",
+          "cause": "evidence_selection_failure",
+          "abstained": true,
+          "clarified": false
+        },
+        {
+          "id": "h118",
+          "category": "cross_document",
+          "cause": "evidence_selection_failure",
+          "abstained": true,
+          "clarified": false
+        },
+        {
+          "id": "h119",
+          "category": "cross_document",
+          "cause": "evidence_selection_failure",
+          "abstained": true,
+          "clarified": false
+        },
+        {
+          "id": "h120",
+          "category": "cross_document",
+          "cause": "evidence_selection_failure",
+          "abstained": true,
+          "clarified": false
+        }
+      ],
+      "over_abstention_flags": 22,
+      "extraction_errors": 0,
+      "context_truncation_note": "No truncation failure established; rejected facts are absent before context assembly in baseline."
+    },
+    "ollama": {
+      "presence_failures": 30,
+      "counts": {
+        "evidence_selection_failure": 30
+      },
+      "raw": [
+        {
+          "id": "h009",
+          "category": "paraphrase",
+          "cause": "evidence_selection_failure",
+          "abstained": true,
+          "clarified": false
+        },
+        {
+          "id": "h010",
+          "category": "paraphrase",
+          "cause": "evidence_selection_failure",
+          "abstained": false,
+          "clarified": false
+        },
+        {
+          "id": "h020",
+          "category": "paraphrase",
+          "cause": "evidence_selection_failure",
+          "abstained": true,
+          "clarified": false
+        },
+        {
+          "id": "h021",
+          "category": "paraphrase",
+          "cause": "evidence_selection_failure",
+          "abstained": false,
+          "clarified": false
+        },
+        {
+          "id": "h031",
+          "category": "paraphrase",
+          "cause": "evidence_selection_failure",
+          "abstained": true,
+          "clarified": false
+        },
+        {
+          "id": "h032",
+          "category": "paraphrase",
+          "cause": "evidence_selection_failure",
+          "abstained": false,
+          "clarified": false
+        },
+        {
+          "id": "h042",
+          "category": "paraphrase",
+          "cause": "evidence_selection_failure",
+          "abstained": true,
+          "clarified": false
+        },
+        {
+          "id": "h043",
+          "category": "paraphrase",
+          "cause": "evidence_selection_failure",
+          "abstained": false,
+          "clarified": false
+        },
+        {
+          "id": "h053",
+          "category": "paraphrase",
+          "cause": "evidence_selection_failure",
+          "abstained": true,
+          "clarified": false
+        },
+        {
+          "id": "h054",
+          "category": "paraphrase",
+          "cause": "evidence_selection_failure",
+          "abstained": false,
+          "clarified": false
+        },
+        {
+          "id": "h064",
+          "category": "paraphrase",
+          "cause": "evidence_selection_failure",
+          "abstained": true,
+          "clarified": false
+        },
+        {
+          "id": "h065",
+          "category": "paraphrase",
+          "cause": "evidence_selection_failure",
+          "abstained": false,
+          "clarified": false
+        },
+        {
+          "id": "h075",
+          "category": "paraphrase",
+          "cause": "evidence_selection_failure",
+          "abstained": true,
+          "clarified": false
+        },
+        {
+          "id": "h076",
+          "category": "paraphrase",
+          "cause": "evidence_selection_failure",
+          "abstained": false,
+          "clarified": false
+        },
+        {
+          "id": "h086",
+          "category": "paraphrase",
+          "cause": "evidence_selection_failure",
+          "abstained": true,
+          "clarified": false
+        },
+        {
+          "id": "h087",
+          "category": "paraphrase",
+          "cause": "evidence_selection_failure",
+          "abstained": false,
+          "clarified": false
+        },
+        {
+          "id": "h097",
+          "category": "paraphrase",
+          "cause": "evidence_selection_failure",
+          "abstained": true,
+          "clarified": false
+        },
+        {
+          "id": "h098",
+          "category": "paraphrase",
+          "cause": "evidence_selection_failure",
+          "abstained": true,
+          "clarified": false
+        },
+        {
+          "id": "h108",
+          "category": "paraphrase",
+          "cause": "evidence_selection_failure",
+          "abstained": true,
+          "clarified": false
+        },
+        {
+          "id": "h109",
+          "category": "paraphrase",
+          "cause": "evidence_selection_failure",
+          "abstained": true,
+          "clarified": false
+        },
+        {
+          "id": "h111",
+          "category": "cross_document",
+          "cause": "evidence_selection_failure",
+          "abstained": true,
+          "clarified": false
+        },
+        {
+          "id": "h112",
+          "category": "cross_document",
+          "cause": "evidence_selection_failure",
+          "abstained": true,
+          "clarified": false
+        },
+        {
+          "id": "h113",
+          "category": "cross_document",
+          "cause": "evidence_selection_failure",
+          "abstained": true,
+          "clarified": false
+        },
+        {
+          "id": "h114",
+          "category": "cross_document",
+          "cause": "evidence_selection_failure",
+          "abstained": true,
+          "clarified": false
+        },
+        {
+          "id": "h115",
+          "category": "cross_document",
+          "cause": "evidence_selection_failure",
+          "abstained": true,
+          "clarified": false
+        },
+        {
+          "id": "h116",
+          "category": "cross_document",
+          "cause": "evidence_selection_failure",
+          "abstained": true,
+          "clarified": false
+        },
+        {
+          "id": "h117",
+          "category": "cross_document",
+          "cause": "evidence_selection_failure",
+          "abstained": true,
+          "clarified": false
+        },
+        {
+          "id": "h118",
+          "category": "cross_document",
+          "cause": "evidence_selection_failure",
+          "abstained": true,
+          "clarified": false
+        },
+        {
+          "id": "h119",
+          "category": "cross_document",
+          "cause": "evidence_selection_failure",
+          "abstained": true,
+          "clarified": false
+        },
+        {
+          "id": "h120",
+          "category": "cross_document",
+          "cause": "evidence_selection_failure",
+          "abstained": true,
+          "clarified": false
+        }
+      ],
+      "over_abstention_flags": 22,
+      "extraction_errors": 0,
+      "context_truncation_note": "No truncation failure established; rejected facts are absent before context assembly in baseline."
+    }
+  },
+  "after_taxonomy": {
+    "extractive": {
+      "presence_failures": 5,
+      "counts": {
+        "conflict_clarification": 5
+      },
+      "raw": [
+        {
+          "id": "h181",
+          "category": "adversarial",
+          "cause": "conflict_clarification",
+          "abstained": false,
+          "clarified": true
+        },
+        {
+          "id": "h186",
+          "category": "adversarial",
+          "cause": "conflict_clarification",
+          "abstained": false,
+          "clarified": true
+        },
+        {
+          "id": "h191",
+          "category": "adversarial",
+          "cause": "conflict_clarification",
+          "abstained": false,
+          "clarified": true
+        },
+        {
+          "id": "h196",
+          "category": "adversarial",
+          "cause": "conflict_clarification",
+          "abstained": false,
+          "clarified": true
+        },
+        {
+          "id": "h201",
+          "category": "adversarial",
+          "cause": "conflict_clarification",
+          "abstained": false,
+          "clarified": true
+        }
+      ],
+      "over_abstention_flags": 0,
+      "extraction_errors": 0,
+      "context_truncation_note": "No truncation failure established; rejected facts are absent before context assembly in baseline."
+    },
+    "ollama": {
+      "presence_failures": 5,
+      "counts": {
+        "conflict_clarification": 5
+      },
+      "raw": [
+        {
+          "id": "h181",
+          "category": "adversarial",
+          "cause": "conflict_clarification",
+          "abstained": false,
+          "clarified": true
+        },
+        {
+          "id": "h186",
+          "category": "adversarial",
+          "cause": "conflict_clarification",
+          "abstained": false,
+          "clarified": true
+        },
+        {
+          "id": "h191",
+          "category": "adversarial",
+          "cause": "conflict_clarification",
+          "abstained": false,
+          "clarified": true
+        },
+        {
+          "id": "h196",
+          "category": "adversarial",
+          "cause": "conflict_clarification",
+          "abstained": false,
+          "clarified": true
+        },
+        {
+          "id": "h201",
+          "category": "adversarial",
+          "cause": "conflict_clarification",
+          "abstained": false,
+          "clarified": true
+        }
+      ],
+      "over_abstention_flags": 0,
+      "extraction_errors": 0,
+      "context_truncation_note": "No truncation failure established; rejected facts are absent before context assembly in baseline."
+    }
+  }
+}

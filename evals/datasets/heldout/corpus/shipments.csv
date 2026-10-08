@@ -1,0 +1,13 @@
+batch,region,revenue,units
+Batch01,East,137,3
+Batch02,North,274,6
+Batch03,West,411,9
+Batch04,East,548,12
+Batch05,North,685,15
+Batch06,West,822,18
+Batch07,East,959,21
+Batch08,North,1096,24
+Batch09,West,1233,27
+Batch10,East,1370,30
+Batch11,North,1507,33
+Batch12,West,1644,36

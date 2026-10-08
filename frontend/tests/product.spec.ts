@@ -38,3 +38,28 @@ test('evaluation dashboard shows recorded results and limitations', async ({page
  await page.setViewportSize({width:390,height:844});
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth)).toBeTruthy();
 });
+
+test('multiple source facts survive selection and conflicting evidence asks for clarification', async ({page,request})=>{
+ const created:string[]=[];
+ try{
+  for(const [name,text] of [
+   ['lyra-ui.txt','Lyra engineering memo. The Lyra retention period is 17 days.'],
+   ['perseus-ui.txt','Perseus engineering memo. The Perseus retention period is 43 days.']
+  ]){
+   const response=await request.post('/api/documents',{multipart:{file:{name,mimeType:'text/plain',buffer:Buffer.from(text)}}});
+   expect(response.ok()).toBeTruthy();created.push((await response.json()).id);
+  }
+  await page.goto('/');
+  await page.getByLabel('Question',{exact:true}).fill('Compare the retention periods for Lyra and Perseus.');
+  await page.getByRole('button',{name:'Ask question',exact:true}).click();
+  await expect(page.locator('.answer')).toContainText('17 days');
+  await expect(page.locator('.answer')).toContainText('43 days');
+  const conflict=await request.post('/api/documents',{multipart:{file:{name:'lyra-conflict.txt',mimeType:'text/plain',buffer:Buffer.from('Lyra engineering memo. The Lyra retention period is 88 days.')}}});
+  expect(conflict.ok()).toBeTruthy();created.push((await conflict.json()).id);
+  await page.getByLabel('Question',{exact:true}).fill('What is the Lyra retention period?');
+  await page.getByRole('button',{name:'Ask question',exact:true}).click();
+  await expect(page.locator('.answer')).toContainText('Which project or document');
+  await expect(page.locator('.answer')).not.toContainText('17 days');
+  await expect(page.locator('.answer')).not.toContainText('88 days');
+ }finally{for(const id of created)await request.delete('/api/documents/'+id);}
+});

@@ -1,0 +1,173 @@
+{
+  "limitations": "Four sample questions across the local demo library; not a broad relevance benchmark.",
+  "results": [
+    {
+      "question": "Who is the workshop coordinator?",
+      "answer": "The workshop coordinator is Elena Brooks. [S1]",
+      "sources": [
+        {
+          "id": "01d0773c1b4f43f0960a63e4edf3c9da",
+          "document_id": "5786a8ece8a74c689e72c3dda0b82a6e",
+          "name": "practice-workshop.png",
+          "page": 1,
+          "text": "ATLAS RESEARCH - OCR PRACTICE Fictional sample image for testing document research. The workshop coordinator is Elena Brooks. The workshop location is Cedar Room. The workshop starts at 3 PM on Friday. The workshop registration fee is 25 dollars. The workshop capacity is 18 attendees. The equipment checklist includes a projector and a laptop. No coordinator phone number is provided in this image.",
+          "score": 0.03279,
+          "evidence_text": "The workshop coordinator is Elena Brooks."
+        }
+      ],
+      "trace": [
+        {
+          "step": "plan",
+          "detail": "Search documents, assemble evidence, and validate source references."
+        },
+        {
+          "step": "retrieve",
+          "detail": "Hybrid TF-IDF + BM25 retrieval and lexical reranking returned 5 chunks; sentence relevance filtering retained 1 sources."
+        },
+        {
+          "step": "answer",
+          "detail": "Generated locally with qwen2.5:1.5b."
+        },
+        {
+          "step": "validate",
+          "detail": "Source reference IDs checked; semantic faithfulness requires separate review."
+        }
+      ],
+      "mode": "ollama",
+      "warning": null,
+      "citation_check": {
+        "valid": true,
+        "invalid": [],
+        "cited_count": 1,
+        "note": "Checks source references, not semantic faithfulness."
+      },
+      "latency_ms": 753.6
+    },
+    {
+      "question": "Where is the workshop?",
+      "answer": "The workshop is located in Cedar Room. [S1]",
+      "sources": [
+        {
+          "id": "01d0773c1b4f43f0960a63e4edf3c9da",
+          "document_id": "5786a8ece8a74c689e72c3dda0b82a6e",
+          "name": "practice-workshop.png",
+          "page": 1,
+          "text": "ATLAS RESEARCH - OCR PRACTICE Fictional sample image for testing document research. The workshop coordinator is Elena Brooks. The workshop location is Cedar Room. The workshop starts at 3 PM on Friday. The workshop registration fee is 25 dollars. The workshop capacity is 18 attendees. The equipment checklist includes a projector and a laptop. No coordinator phone number is provided in this image.",
+          "score": 0.03279,
+          "evidence_text": "The workshop location is Cedar Room."
+        }
+      ],
+      "trace": [
+        {
+          "step": "plan",
+          "detail": "Search documents, assemble evidence, and validate source references."
+        },
+        {
+          "step": "retrieve",
+          "detail": "Hybrid TF-IDF + BM25 retrieval and lexical reranking returned 5 chunks; sentence relevance filtering retained 1 sources."
+        },
+        {
+          "step": "answer",
+          "detail": "Generated locally with qwen2.5:1.5b."
+        },
+        {
+          "step": "validate",
+          "detail": "Source reference IDs checked; semantic faithfulness requires separate review."
+        }
+      ],
+      "mode": "ollama",
+      "warning": null,
+      "citation_check": {
+        "valid": true,
+        "invalid": [],
+        "cited_count": 1,
+        "note": "Checks source references, not semantic faithfulness."
+      },
+      "latency_ms": 468.8
+    },
+    {
+      "question": "What is the workshop registration fee?",
+      "answer": "The workshop registration fee is 25 dollars. [S1]",
+      "sources": [
+        {
+          "id": "01d0773c1b4f43f0960a63e4edf3c9da",
+          "document_id": "5786a8ece8a74c689e72c3dda0b82a6e",
+          "name": "practice-workshop.png",
+          "page": 1,
+          "text": "ATLAS RESEARCH - OCR PRACTICE Fictional sample image for testing document research. The workshop coordinator is Elena Brooks. The workshop location is Cedar Room. The workshop starts at 3 PM on Friday. The workshop registration fee is 25 dollars. The workshop capacity is 18 attendees. The equipment checklist includes a projector and a laptop. No coordinator phone number is provided in this image.",
+          "score": 0.03279,
+          "evidence_text": "The workshop registration fee is 25 dollars."
+        }
+      ],
+      "trace": [
+        {
+          "step": "plan",
+          "detail": "Search documents, assemble evidence, and validate source references."
+        },
+        {
+          "step": "retrieve",
+          "detail": "Hybrid TF-IDF + BM25 retrieval and lexical reranking returned 5 chunks; sentence relevance filtering retained 1 sources."
+        },
+        {
+          "step": "answer",
+          "detail": "Generated locally with qwen2.5:1.5b."
+        },
+        {
+          "step": "validate",
+          "detail": "Source reference IDs checked; semantic faithfulness requires separate review."
+        }
+      ],
+      "mode": "ollama",
+      "warning": null,
+      "citation_check": {
+        "valid": true,
+        "invalid": [],
+        "cited_count": 1,
+        "note": "Checks source references, not semantic faithfulness."
+      },
+      "latency_ms": 492.0
+    },
+    {
+      "question": "Who is the project manager?",
+      "answer": "The project manager is Maya Chen. [S1]",
+      "sources": [
+        {
+          "id": "b9fa4e6263fa402a959f20fcc7d486a0",
+          "document_id": "41a289e6ef7e421999e1b31813566283",
+          "name": "practice-project-notes.pdf",
+          "page": 1,
+          "text": "Atlas Research - Sample Project Notes Fictional practice document for testing document Q&A. Project overview Atlas Research helps a small team search internal documents. The project manager is Maya Chen. The planned launch date is November 20, 2026. Team and schedule Ava Patel owns document ingestion. Ravi Shah owns retrieval evaluations. The weekly project review is Tuesday at 2 PM. Release requirements The first release must support text documents and PDFs. Every generated answer must include source references. The evaluation dataset must contain at least 50 questions. The team must manually review unsupported answers. Budget and storage The monthly cloud services budget is zero dollars. The initial application runs locally on a laptop. Documents are stored in a local SQLite database. Known limitations Scanned PDFs require OCR before text retrieval. Citation checks verify source IDs, not factual correctness.",
+          "score": 0.03279,
+          "evidence_text": "The project manager is Maya Chen."
+        }
+      ],
+      "trace": [
+        {
+          "step": "plan",
+          "detail": "Search documents, assemble evidence, and validate source references."
+        },
+        {
+          "step": "retrieve",
+          "detail": "Hybrid TF-IDF + BM25 retrieval and lexical reranking returned 5 chunks; sentence relevance filtering retained 1 sources."
+        },
+        {
+          "step": "answer",
+          "detail": "Generated locally with qwen2.5:1.5b."
+        },
+        {
+          "step": "validate",
+          "detail": "Source reference IDs checked; semantic faithfulness requires separate review."
+        }
+      ],
+      "mode": "ollama",
+      "warning": null,
+      "citation_check": {
+        "valid": true,
+        "invalid": [],
+        "cited_count": 1,
+        "note": "Checks source references, not semantic faithfulness."
+      },
+      "latency_ms": 447.0
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "engine": "Tesseract local OCR",
+  "limitations": "One clean English text image; not a general OCR accuracy benchmark or visual understanding test.",
+  "results": [
+    {
+      "question": "Who is the workshop coordinator?",
+      "expected": "Elena Brooks",
+      "answer": "The workshop coordinator is Elena Brooks. [S1]",
+      "sources": [
+        {
+          "id": "5eae43bc88cd431794dc655129de874f",
+          "document_id": "b0317be640de4eabac804433d8723c41",
+          "name": "practice-workshop.png",
+          "page": 1,
+          "text": "ATLAS RESEARCH - OCR PRACTICE Fictional sample image for testing document research. The workshop coordinator is Elena Brooks. The workshop location is Cedar Room. The workshop starts at 3 PM on Friday. The workshop registration fee is 25 dollars. The workshop capacity is 18 attendees. The equipment checklist includes a projector and a laptop. No coordinator phone number is provided in this image.",
+          "score": 0.03279
+        }
+      ],
+      "trace": [
+        {
+          "step": "plan",
+          "detail": "Search documents, assemble evidence, and validate source references."
+        },
+        {
+          "step": "retrieve",
+          "detail": "Hybrid TF-IDF + BM25 retrieval and lexical reranking returned 1 chunks."
+        },
+        {
+          "step": "answer",
+          "detail": "Selected source sentences."
+        },
+        {
+          "step": "validate",
+          "detail": "Source reference IDs checked; semantic faithfulness requires separate review."
+        }
+      ],
+      "mode": "extractive",
+      "warning": null,
+      "citation_check": {
+        "valid": true,
+        "invalid": [],
+        "cited_count": 1,
+        "note": "Checks source references, not semantic faithfulness."
+      },
+      "latency_ms": 2.5
+    },
+    {
+      "question": "What is the workshop location?",
+      "expected": "Cedar Room",
+      "answer": "The workshop location is Cedar Room. [S1]",
+      "sources": [
+        {
+          "id": "5eae43bc88cd431794dc655129de874f",
+          "document_id": "b0317be640de4eabac804433d8723c41",
+          "name": "practice-workshop.png",
+          "page": 1,
+          "text": "ATLAS RESEARCH - OCR PRACTICE Fictional sample image for testing document research. The workshop coordinator is Elena Brooks. The workshop location is Cedar Room. The workshop starts at 3 PM on Friday. The workshop registration fee is 25 dollars. The workshop capacity is 18 attendees. The equipment checklist includes a projector and a laptop. No coordinator phone number is provided in this image.",
+          "score": 0.03279
+        }
+      ],
+      "trace": [
+        {
+          "step": "plan",
+          "detail": "Search documents, assemble evidence, and validate source references."
+        },
+        {
+          "step": "retrieve",
+          "detail": "Hybrid TF-IDF + BM25 retrieval and lexical reranking returned 1 chunks."
+        },
+        {
+          "step": "answer",
+          "detail": "Selected source sentences."
+        },
+        {
+          "step": "validate",
+          "detail": "Source reference IDs checked; semantic faithfulness requires separate review."
+        }
+      ],
+      "mode": "extractive",
+      "warning": null,
+      "citation_check": {
+        "valid": true,
+        "invalid": [],
+        "cited_count": 1,
+        "note": "Checks source references, not semantic faithfulness."
+      },
+      "latency_ms": 1.0
+    },
+    {
+      "question": "What is the workshop registration fee?",
+      "expected": "25 dollars",
+      "answer": "The workshop registration fee is 25 dollars. [S1]",
+      "sources": [
+        {
+          "id": "5eae43bc88cd431794dc655129de874f",
+          "document_id": "b0317be640de4eabac804433d8723c41",
+          "name": "practice-workshop.png",
+          "page": 1,
+          "text": "ATLAS RESEARCH - OCR PRACTICE Fictional sample image for testing document research. The workshop coordinator is Elena Brooks. The workshop location is Cedar Room. The workshop starts at 3 PM on Friday. The workshop registration fee is 25 dollars. The workshop capacity is 18 attendees. The equipment checklist includes a projector and a laptop. No coordinator phone number is provided in this image.",
+          "score": 0.03279
+        }
+      ],
+      "trace": [
+        {
+          "step": "plan",
+          "detail": "Search documents, assemble evidence, and validate source references."
+        },
+        {
+          "step": "retrieve",
+          "detail": "Hybrid TF-IDF + BM25 retrieval and lexical reranking returned 1 chunks."
+        },
+        {
+          "step": "answer",
+          "detail": "Selected source sentences."
+        },
+        {
+          "step": "validate",
+          "detail": "Source reference IDs checked; semantic faithfulness requires separate review."
+        }
+      ],
+      "mode": "extractive",
+      "warning": null,
+      "citation_check": {
+        "valid": true,
+        "invalid": [],
+        "cited_count": 1,
+        "note": "Checks source references, not semantic faithfulness."
+      },
+      "latency_ms": 1.0
+    }
+  ]
+}

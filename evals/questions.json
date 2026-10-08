@@ -1,0 +1,10 @@
+[
+  {"question":"How does hybrid retrieval combine search scores?","relevant_document":"platform-guide.txt","expected_text":"reciprocal rank fusion"},
+  {"question":"When is the weekly research review?","relevant_document":"team-notes.md","expected_text":"Thursday"},
+  {"question":"Who owns evaluation datasets?","relevant_document":"team-notes.md","expected_text":"Ravi"},
+  {"question":"Which local model is suggested?","relevant_document":"platform-guide.txt","expected_text":"qwen2.5:1.5b"},
+  {"question":"How is answer faithfulness evaluated?","relevant_document":"platform-guide.txt","expected_text":"not automatically established"},
+  {"question":"What was the January West revenue?","relevant_document":"sales.csv","expected_text":"1200"},
+  {"question":"What is required in the release checklist?","relevant_document":"team-notes.md","expected_text":"citation checks"},
+  {"question":"Are scanned PDFs supported?","relevant_document":"platform-guide.txt","expected_text":"Scanned PDF OCR is not supported"}
+]

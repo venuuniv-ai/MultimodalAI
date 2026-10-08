@@ -1,0 +1,133 @@
+{
+  "model": "qwen2.5:1.5b",
+  "limitations": "Three manually reviewed integration examples, not a quality benchmark.",
+  "results": [
+    {
+      "question": "Who is the project manager?",
+      "answer": "The project manager is Maya Chen. [S1]",
+      "sources": [
+        {
+          "id": "25900defffa142098066f429e1be9830",
+          "document_id": "b0232b14169f4bb8826969767f6f12d7",
+          "name": "practice-project-notes.pdf",
+          "page": 1,
+          "text": "Atlas Research - Sample Project Notes Fictional practice document for testing document Q&A. Project overview Atlas Research helps a small team search internal documents. The project manager is Maya Chen. The planned launch date is November 20, 2026. Team and schedule Ava Patel owns document ingestion. Ravi Shah owns retrieval evaluations. The weekly project review is Tuesday at 2 PM. Release requirements The first release must support text documents and PDFs. Every generated answer must include source references. The evaluation dataset must contain at least 50 questions. The team must manually review unsupported answers. Budget and storage The monthly cloud services budget is zero dollars. The initial application runs locally on a laptop. Documents are stored in a local SQLite database. Known limitations Scanned PDFs require OCR before text retrieval. Citation checks verify source IDs, not factual correctness.",
+          "score": 0.03279
+        }
+      ],
+      "trace": [
+        {
+          "step": "plan",
+          "detail": "Search documents, assemble evidence, and validate source references."
+        },
+        {
+          "step": "retrieve",
+          "detail": "Hybrid TF-IDF + BM25 retrieval and lexical reranking returned 1 chunks."
+        },
+        {
+          "step": "answer",
+          "detail": "Generated locally with qwen2.5:1.5b."
+        },
+        {
+          "step": "validate",
+          "detail": "Source reference IDs checked; semantic faithfulness requires separate review."
+        }
+      ],
+      "mode": "ollama",
+      "warning": null,
+      "citation_check": {
+        "valid": true,
+        "invalid": [],
+        "cited_count": 1,
+        "note": "Checks source references, not semantic faithfulness."
+      },
+      "latency_ms": 848.3
+    },
+    {
+      "question": "What is the monthly cloud budget?",
+      "answer": "The monthly cloud budget for Atlas Research is zero dollars. [S1]",
+      "sources": [
+        {
+          "id": "25900defffa142098066f429e1be9830",
+          "document_id": "b0232b14169f4bb8826969767f6f12d7",
+          "name": "practice-project-notes.pdf",
+          "page": 1,
+          "text": "Atlas Research - Sample Project Notes Fictional practice document for testing document Q&A. Project overview Atlas Research helps a small team search internal documents. The project manager is Maya Chen. The planned launch date is November 20, 2026. Team and schedule Ava Patel owns document ingestion. Ravi Shah owns retrieval evaluations. The weekly project review is Tuesday at 2 PM. Release requirements The first release must support text documents and PDFs. Every generated answer must include source references. The evaluation dataset must contain at least 50 questions. The team must manually review unsupported answers. Budget and storage The monthly cloud services budget is zero dollars. The initial application runs locally on a laptop. Documents are stored in a local SQLite database. Known limitations Scanned PDFs require OCR before text retrieval. Citation checks verify source IDs, not factual correctness.",
+          "score": 0.03279
+        }
+      ],
+      "trace": [
+        {
+          "step": "plan",
+          "detail": "Search documents, assemble evidence, and validate source references."
+        },
+        {
+          "step": "retrieve",
+          "detail": "Hybrid TF-IDF + BM25 retrieval and lexical reranking returned 1 chunks."
+        },
+        {
+          "step": "answer",
+          "detail": "Generated locally with qwen2.5:1.5b."
+        },
+        {
+          "step": "validate",
+          "detail": "Source reference IDs checked; semantic faithfulness requires separate review."
+        }
+      ],
+      "mode": "ollama",
+      "warning": null,
+      "citation_check": {
+        "valid": true,
+        "invalid": [],
+        "cited_count": 1,
+        "note": "Checks source references, not semantic faithfulness."
+      },
+      "latency_ms": 744.8
+    },
+    {
+      "question": "What is Maya's phone number?",
+      "answer": "I could not find supporting evidence in the indexed documents.",
+      "sources": [
+        {
+          "id": "25900defffa142098066f429e1be9830",
+          "document_id": "b0232b14169f4bb8826969767f6f12d7",
+          "name": "practice-project-notes.pdf",
+          "page": 1,
+          "text": "Atlas Research - Sample Project Notes Fictional practice document for testing document Q&A. Project overview Atlas Research helps a small team search internal documents. The project manager is Maya Chen. The planned launch date is November 20, 2026. Team and schedule Ava Patel owns document ingestion. Ravi Shah owns retrieval evaluations. The weekly project review is Tuesday at 2 PM. Release requirements The first release must support text documents and PDFs. Every generated answer must include source references. The evaluation dataset must contain at least 50 questions. The team must manually review unsupported answers. Budget and storage The monthly cloud services budget is zero dollars. The initial application runs locally on a laptop. Documents are stored in a local SQLite database. Known limitations Scanned PDFs require OCR before text retrieval. Citation checks verify source IDs, not factual correctness.",
+          "score": 0.03279
+        }
+      ],
+      "trace": [
+        {
+          "step": "plan",
+          "detail": "Search documents, assemble evidence, and validate source references."
+        },
+        {
+          "step": "retrieve",
+          "detail": "Hybrid TF-IDF + BM25 retrieval and lexical reranking returned 1 chunks."
+        },
+        {
+          "step": "evidence_check",
+          "detail": "Weak lexical evidence; declined generation rather than supplying unrelated facts."
+        },
+        {
+          "step": "answer",
+          "detail": "Generated locally with qwen2.5:1.5b."
+        },
+        {
+          "step": "validate",
+          "detail": "Source reference IDs checked; semantic faithfulness requires separate review."
+        }
+      ],
+      "mode": "ollama",
+      "warning": null,
+      "citation_check": {
+        "valid": false,
+        "invalid": [],
+        "cited_count": 0,
+        "note": "Checks source references, not semantic faithfulness."
+      },
+      "latency_ms": 2.0
+    }
+  ]
+}

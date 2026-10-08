@@ -1,0 +1,18 @@
+Local Research Desk — Platform Guide
+
+Local Research Desk is a portfolio application for answering questions about uploaded documents. It runs on your own computer and does not require a paid model API or a cloud account.
+
+Documents and privacy
+Supported input formats are text, Markdown, PDF, CSV, PNG, and JPEG. PDFs with selectable text are parsed locally. Images use Tesseract OCR when it is installed. Scanned PDF OCR is not supported. All indexed chunks are stored in a local SQLite database. No uploaded documents are sent to cloud model providers.
+
+Retrieval and citations
+The search engine combines TF-IDF similarity with BM25 lexical search using reciprocal rank fusion. A lexical reranker prioritizes matching query terms. Answers display document and page references. Citation validation verifies that each cited chunk was retrieved; it does not prove that every statement is true.
+
+Answer modes
+Extractive mode selects relevant source sentences and works without any model download. Ollama mode sends retrieved passages to a local model and asks for a grounded answer. The suggested starting model is qwen2.5:1.5b. Generation speed depends on your hardware.
+
+Evaluation
+Retrieval quality is measured using Recall@10 and mean reciprocal rank on a small labeled sample dataset. Answer faithfulness is not automatically established by citation presence. Latency reports describe the measured machine and workload, not a production service-level guarantee.
+
+CSV tools
+The deterministic CSV tool can count rows or summarize a named numeric column. Row count excludes the header. Numeric summary returns count, sum, mean, minimum, and maximum, skipping empty or nonnumeric values and reporting how many values were skipped.

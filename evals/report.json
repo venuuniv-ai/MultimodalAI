@@ -1,0 +1,85 @@
+{
+  "dataset": "8 synthetic demo questions with labeled evidence spans",
+  "limitations": "Small demo set; not held-out production data. Citation validity and expected-span presence do not measure semantic faithfulness.",
+  "machine": "macOS-26.6.2-arm64-arm-64bit",
+  "questions": 8,
+  "evidence_hit_rate_at_10": 1.0,
+  "mrr_at_10": 1.0,
+  "citation_valid_rate": 0.875,
+  "expected_span_in_answer_rate": 0.875,
+  "retrieval_p95_ms": 2.93,
+  "results": [
+    {
+      "question": "How does hybrid retrieval combine search scores?",
+      "relevant_document": "platform-guide.txt",
+      "expected_text": "reciprocal rank fusion",
+      "rank": 1,
+      "retrieval_ms": 2.93,
+      "citation_valid": false,
+      "expected_span_in_answer": false
+    },
+    {
+      "question": "When is the weekly research review?",
+      "relevant_document": "team-notes.md",
+      "expected_text": "Thursday",
+      "rank": 1,
+      "retrieval_ms": 1.48,
+      "citation_valid": true,
+      "expected_span_in_answer": true
+    },
+    {
+      "question": "Who owns evaluation datasets?",
+      "relevant_document": "team-notes.md",
+      "expected_text": "Ravi",
+      "rank": 1,
+      "retrieval_ms": 1.59,
+      "citation_valid": true,
+      "expected_span_in_answer": true
+    },
+    {
+      "question": "Which local model is suggested?",
+      "relevant_document": "platform-guide.txt",
+      "expected_text": "qwen2.5:1.5b",
+      "rank": 1,
+      "retrieval_ms": 1.46,
+      "citation_valid": true,
+      "expected_span_in_answer": true
+    },
+    {
+      "question": "How is answer faithfulness evaluated?",
+      "relevant_document": "platform-guide.txt",
+      "expected_text": "not automatically established",
+      "rank": 1,
+      "retrieval_ms": 1.4,
+      "citation_valid": true,
+      "expected_span_in_answer": true
+    },
+    {
+      "question": "What was the January West revenue?",
+      "relevant_document": "sales.csv",
+      "expected_text": "1200",
+      "rank": 1,
+      "retrieval_ms": 1.41,
+      "citation_valid": true,
+      "expected_span_in_answer": true
+    },
+    {
+      "question": "What is required in the release checklist?",
+      "relevant_document": "team-notes.md",
+      "expected_text": "citation checks",
+      "rank": 1,
+      "retrieval_ms": 1.44,
+      "citation_valid": true,
+      "expected_span_in_answer": true
+    },
+    {
+      "question": "Are scanned PDFs supported?",
+      "relevant_document": "platform-guide.txt",
+      "expected_text": "Scanned PDF OCR is not supported",
+      "rank": 1,
+      "retrieval_ms": 1.49,
+      "citation_valid": true,
+      "expected_span_in_answer": true
+    }
+  ]
+}
